@@ -11,14 +11,21 @@ body {
 	margin: 0px;
 	height: 100%
 }
-
+#logo {
+	background-image: url('abstract.jpg');
+	width: 100%;
+	height: 100px;
+	background-position: center;
+  /* Make the background image cover the area of the <div>, and clip the excess */
+	background-size: auto;
+}
 nav {
 	position: fixed;
 	height: 100%;
 	width: 125px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	/* justify-content: space-around; */
 	text-align: center;
 	background-color: #222222;
 	padding: 0px;
@@ -28,6 +35,10 @@ nav a {
 	display: block;
 	color: white;
 	text-decoration: none;
+	padding: 15px;
+}
+nav a.current {
+	background-color: black;
 }
 section {
 	margin-left: 125px;
