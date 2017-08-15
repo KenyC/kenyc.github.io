@@ -100,7 +100,12 @@ header {
 	width: 60%;
 	margin-top: 25px;
 }
-.avatar {
+.avatarL {
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+.avatarR {
 	float: right;
 	margin-left: 15px;
 	margin-bottom: 15px;
