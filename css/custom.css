@@ -1,6 +1,10 @@
 .papers a {
 	color: black;
 }
+.papers li {
+	padding: 5px 0px;
+}
+
 html {
 	height: 100%
 }
@@ -100,13 +104,36 @@ header {
 	width: 60%;
 	margin-top: 25px;
 }
-.avatarL {
+.borderImg {
+	flex-grow: 0;
+	flex-shrink: 0;
+	margin: 5px;
 	float: left;
-	margin-right: 15px;
-	margin-bottom: 15px;
+	border:1px solid black;
 }
+.trImg {
+	flex-grow: 0;
+	flex-shrink: 0;
+	float: left;
+}
+.test{
+	align-content: flex-start;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-items: center;
+	display: flex;
+	/*border:1px solid black;*/
+}
+
 .avatarR {
 	float: right;
 	margin-left: 15px;
 	margin-bottom: 15px;
+}
+#omega {
+	float: left;
+	color: black;
+	text-decoration: none;
+	font-size: 100px;
+	/*border:1px solid black;*/
 }
