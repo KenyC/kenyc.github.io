@@ -9,6 +9,8 @@
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <title>Keny Chatain</title>
 </head>
+
+
 <body>
 
 <nav>
@@ -62,7 +64,7 @@ Keny Chatain
 
 <article id="content">
 <h1>Contact me!</h1>
-<p>kchatain (at) mit (dot) edu</p>
+<p id="email" onload="writeEmail();">kchatain (at) mit (dot) edu</p>
 
 <blockquote>
 Keny Chatain<br />
@@ -76,6 +78,11 @@ Cambridge, MA 02139
 
 </article>
 </section>
+
+<script type="text/javascript">
+	var antecedent = "kchatain"+"@"+"mit";
+	document.getElementById("email").innerHTML=antecedent+".edu";
+</script>
 
 </body>
 
