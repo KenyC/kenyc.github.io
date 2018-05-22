@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <title>Keny Chatain</title>
 </head>
+
 <body>
 
 <nav>
@@ -61,7 +62,8 @@ Keny Chatain
 <!-- </header> -->
 
 <article id="content">
-<h1>Research</h1>
+<!-- <h1>Research</h1> -->
+<h2>Presentations</h2>
 <ul class="papers">
 
 <li>
@@ -78,6 +80,12 @@ Keny Chatain
 <em>The referentiality of generic indefinites: evidence from anaphora (2017)</em><br /><a href="docs/GenericIndefinitesAsReferentialExpressions.pdf"><i class="fa fa-file-pdf-o"></i></a> (Presented at SNEWS)
 <br />
 </li>
+
+</ul>
+
+<h2>Various manuscripts</h2>
+
+<ul class="paper">
 
 <li>
 <em>Accounting for the existential/universal construals (2017)</em><br /><a href="docs/WeakStrongReadings.pdf"><i class="fa fa-file-pdf-o"></i></a> (Presented in class)
@@ -101,14 +109,16 @@ Keny Chatain
 </li>
 
 <li>
-<em>A mixed approach to the semantics of "different" (2015)</em><br /> (Semantics 1st year squib)
-<p>In this squib, I argue that Charnavel (2015)'s uniform approach to the meanings of "different" can successfully be turned into a movement analysis, where "different" is a scopal element (as in Barker 2007).
+<em>A mixed approach to the semantics of "different" (2015)</em><br /> 
+<i class="fa fa-info collapsible"></i> (Semantics 1st year squib)
+<p style="display: none;">In this squib, I argue that Charnavel (2015)'s uniform approach to the meanings of "different" can successfully be turned into a movement analysis, where "different" is a scopal element (as in Barker 2007).
 This move is shown to be crucial if we want to account for readings of "different" under modal predicates. The scopal analysis of "different" also suggests that internal adjectives fall into one of two categories: scopal internal adjectives (like "different") and inert internal adjectives (like "neighboring"). Empirical tests can successfully distinguish the two categories.</p>
 </li>
 
 <li>
-<em>Compositionality can solve Carnap's problem for natural languages (2015)</em><br /> (CogMaster's mini-stage)
-<p>Carnap has shown that one cannot retrieve the reference of logical terms from the patterns of inference they give rise to. Translated to natural languages, this means that functional elements (like <em>every</em>, <em>and</em>) cannot be acquired solely on the basis of entailments between sentences. Bonnay proved that Carnap's problem vanishes if we take compositionality to be a semantic universal (with some other minor assumptions). In this paper, I show that this result extends to the kind of trivalent first-order logic that is suited to deal with presuppositions.</p>
+<em>Compositionality can solve Carnap's problem for natural languages (2015)</em><br />
+<i class="fa fa-info collapsible"></i> (CogMaster's mini-stage)
+<p style="display: none;">Carnap has shown that one cannot retrieve the reference of logical terms from the patterns of inference they give rise to. Translated to natural languages, this means that functional elements (like <em>every</em>, <em>and</em>) cannot be acquired solely on the basis of entailments between sentences. Bonnay proved that Carnap's problem vanishes if we take compositionality to be a semantic universal (with some other minor assumptions). In this paper, I show that this result extends to the kind of trivalent first-order logic that is suited to deal with presuppositions.</p>
 </li>
 
 </ul>
@@ -117,7 +127,8 @@ The following notes are informal notes about every thought I don't have time to 
 	<li>
 		<em>Universal languages (2017)</em><br />
 		<a href="docs/UniversalLanguages.pdf"><i class="fa fa-file-pdf-o"></i></a> 
-		<p>Inspired by one of my own misunderstandings, I set out to understand (in very formal details) the difference between Chomsky's position and what I thought his position was.</p>
+		<i class="fa fa-info collapsible"></i>
+		<p style="display: none;">I show that certain classes of formal languages - among which context-free languages- can be seen as transduction of one single universal language, certain cannot - such as multiple context-free grammars and equivalent formalisms. This is an attempt to elucidate the difference or lack thereof between two different views on the nature of UG: one view according to which UG specifies a class of languages ; one view according to which UG specifies a singe formal language, which is mapped to the interfaces in different ways.</p>
 	</li>
 
 </ul>
@@ -126,7 +137,22 @@ The following notes are informal notes about every thought I don't have time to 
 
 </article>
 </section>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+</script>
 </body>
 
 </html>
