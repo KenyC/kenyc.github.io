@@ -3,7 +3,7 @@ import os
 REPLACE_CONTENT = "<!--##CONTENT##-->"
 REPLACE_ACTIVE = "<!--##ACTIVE##-->"
 TEMPLATE_DIR = "templates"
-TEMPLATE_TO_USE = os.path.join(TEMPLATE_DIR, "template.html")
+TEMPLATE_TO_USE = os.path.join(TEMPLATE_DIR, "template_black.html")
 LOC_CONTENT = "contents"
 
 def replace_active(string, filename):
