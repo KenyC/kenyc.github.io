@@ -1,32 +1,129 @@
-.collapsible {
-	cursor: pointer;
-}
-.papers a {
-	color: black;
-}
-.papers li {
-	padding: 5px 0px;
-}
+/* ##################### ESSENTIALS ####################################*/
 
 html {
 	height: 100%
 }
+
 body {
-	/* background-color: black; */
-	/* color: white; */
-	background-color: #EFEFEF;
+	font-size: 11pt;
+	background-color: white;
 	color: black;
-	display: flex;
-	flex-direction: row;
-	margin: 0px;
-	height: 100%
+	/*font-family: 'IBM Plex Serif','Georgia',Times,serif;*/
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+
+	margin-left: 24%;
+	margin-right: 24%;
+	height: 100%;
 }
+
+a.nolink {
+	text-decoration: none;
+	box-shadow: none;
+}
+
+a {
+	box-shadow: 0 1px 0 0 currentColor;
+	text-decoration: none;
+	color: #007acc;
+}
+
+a:hover, a:focus, a:active {
+	color: #686868;
+	box-shadow: none;
+}
+
 #leftbanner {
+	width: 100%;
+	/*height: 100%;*/
+}
+
+nav {
+	/*position: fixed;*/
+	width: 100%;
+	height: 150px;
+
+/*	border-top: black solid 20px;
+*/
+	display: flex;
+	flex-direction: column;
+/*	align-items: center;
+*/	justify-content: space-between;
+	text-align: center;
+	padding: 0px;
+	
+}
+
+#content {
+	text-align: justify;
+	width: 100%;
+	margin-top: 25px;
+}
+#icons {
+	margin: 0px;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	height: 100%;
+	justify-content: space-around;
+/*	padding-left: 15px;
+	padding-right: 35px;
+*/}
+
+#icons a {
+	background-color: #2A2D34;
+	color: #1B9AAA;
+	background-clip: padding-box;
+	font-size: 120%;
+	padding-top: 20px;
+	padding-bottom: 5px;
 }
+
+#icons a:first-child {
+	border-top-left-radius:    15px;
+	border-bottom-left-radius: 15px;
+}
+
+#icons a:last-child {
+	border-top-right-radius:    15px;
+	border-bottom-right-radius: 15px;
+}
+
+#icons a.current {
+	background-color: black;
+	background-clip: padding-box;
+}
+nav a {
+	flex: 1;
+	font-size: 90%;
+	margin: 0px;
+	display: block;
+	text-decoration: none;
+/*	padding-left: 15px; 
+	padding-right: 15px; 
+*/	padding-top: 10px;
+	/* height: 100%; */
+}
+section {
+	margin-top: 60px;
+	/*margin-left: 125px;*/
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header {
+	background-color: black;
+	width: 100%;
+	min-height: 15%;
+	height: 15%;
+}
+
+
+
+/* ####################### TEXT ###################################"*/
+
 
 #logo {
 	background-image: url('abstract.jpg');
@@ -37,76 +134,53 @@ body {
 	background-size: auto;
 }
 #text {
-	text-align: left;
-	color: #1B9AAA;
-	margin-left: 20px; 
+	text-align: right;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 100%;
+	padding: 0px;
+	/*color: #1B9AAA;*/
+	/*margin-left: 20px;*/
 	font-size: 150%;
 }
+
+#line {
+	flex-grow: 1;
+	height: 0px;
+	margin-top: 10px;
+	margin-right: 10px;
+	border-top: solid #1B9AAA 3px;
+	align-self: center;
+}
+
 #text h1 {
 	font-size: 150%;
+	/*color: #1B9AAA;*/
 }
 #text h2 {
+	/*color: #1B9AAA;*/
 	font-style: oblique;
 }
-nav {
-	position: fixed;
-	width: 100%;
-	height: 100px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	text-align: center;
-	background-color: #2A2D34;
-	padding: 0px;
-	
+
+
+
+section h2 span {
+	border-bottom: solid #1B9AAA 3px;
+
+	/*text-decoration: underline;
+	text-decoration-color: #1B9AAA;
+	text-decoration-thickness: 3px;*/
+
 }
-#icons {
-	margin: 0px;
-	width: 40%;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	padding-left: 15px;
-	padding-right: 35px;
-}
-nav a {
-	flex: 1;
-	font-size: 90%;
-	margin: 0px;
-	display: block;
-	color: #1B9AAA;
-	text-decoration: none;
-	/* padding-left: 15px; */
-	/* padding-right: 15px; */
-	padding-top: 10px;
-	/* height: 100%; */
-}
-nav a.current {
-	background-color: black;
-	background-clip: border-box;
-}
-section {
-	margin-top: 100px;
-	margin-left: 125px;
-	height: 100%;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-header {
-	background-color: black;
-	width: 100%;
-	min-height: 15%;
-	height: 15%;
-}
-#content {
-	text-align: justify;
-	width: 60%;
-	margin-top: 25px;
-}
+
+
+
+
+
+
+/* ########################## MISC. ############################################""*/
+
 .borderImg {
 	flex-grow: 0;
 	flex-shrink: 0;
@@ -129,9 +203,9 @@ header {
 }
 
 .avatarR {
-	float: right;
-	margin-left: 15px;
-	margin-bottom: 15px;
+	display: block;
+	margin: auto;
+	margin-top: 30px;
 }
 #omega {
 	float: left;
@@ -139,4 +213,16 @@ header {
 	text-decoration: none;
 	font-size: 100px;
 	/*border:1px solid black;*/
+}
+
+/* ################################ RESEARCH ##################################" */
+
+.collapsible {
+	cursor: pointer;
+}
+.papers a {
+	color: black;
+}
+.papers li {
+	padding: 5px 0px;
 }

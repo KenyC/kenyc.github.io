@@ -56,7 +56,19 @@ nav {
 	background-color: #2A2D34;
 	color: #1B9AAA;
 	background-clip: padding-box;
-	font-size: 120%
+	font-size: 120%;
+	padding-top: 20px;
+	padding-bottom: 5px;
+}
+
+#icons a:first-child {
+	border-top-left-radius:    15px;
+	border-bottom-left-radius: 15px;
+}
+
+#icons a:last-child {
+	border-top-right-radius:    15px;
+	border-bottom-right-radius: 15px;
 }
 
 #icons a.current {
@@ -75,7 +87,7 @@ nav a {
 	/* height: 100%; */
 }
 section {
-	margin-top: 50px;
+	margin-top: 60px;
 	/*margin-left: 125px;*/
 	height: 100%;
 	width: 100%;
