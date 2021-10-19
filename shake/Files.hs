@@ -37,6 +37,9 @@ other_files_from_src :: [FilePath]
 other_files_from_src = [ "img/*"
                        , "resources/docs/*"
                        , "resources/docs/dissertation/*"
+                       , "resources/docs/dissertation/defense/*"
+                       , "resources/docs/dissertation/defense/resources/*"
+                       , "resources/docs/dissertation/defense/build/*"
                        , "resources/shajara/*"
                        , "resources/files/*" ]
 

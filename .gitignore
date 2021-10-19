@@ -1,4 +1,6 @@
 _cache/
+.shake/
+build/
 _site/
 update-site
 
