@@ -32,6 +32,10 @@ a:hover, a:focus, a:active {
 	box-shadow: none;
 }
 
+.imgs a {
+	box-shadow: none;
+}
+
 #leftbanner {
 	width: 100%;
 	/*height: 100%;*/
