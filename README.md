@@ -1,2 +1,3 @@
-# website
-Hakyll generator for website
+# Generator website
+
+Shake generator for my personal website
