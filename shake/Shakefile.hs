@@ -1,9 +1,5 @@
-import Control.Monad
---
 import Development.Shake
-import Development.Shake.Command
 import Development.Shake.FilePath
-import Development.Shake.Util
 
 import Files
 import Template
@@ -21,29 +17,29 @@ main = shakeArgs options $ do
     want ["main"]
 
     phony "main" $ do
-        need =<< all_files
+        need =<< allFiles
 
     ------------------- HTML FILES -----------------
-    build_dir </> "*.html" %> \out -> do
+    buildDir </> "*.html" %> \out -> do
         let sourceFile = "src" </> "contents" </> dropDirectory1 out 
-        need [sourceFile, default_template]
-        putInfo $ "#replaceName " ++ sourceFile ++ " " ++ out
+        need [sourceFile, defaultTemplate]
+        putInfo $ "# renderTemplateToFile " ++ sourceFile ++ " " ++ out
         liftIO $ do
-            body_text <- readFile sourceFile
-            template  <- applyTemplate default_template body_text $ takeBaseName sourceFile
+            bodyText  <- readFile sourceFile
+            template  <- applyTemplate defaultTemplate bodyText $ takeBaseName sourceFile
             renderTemplateToFile template out
 
 
     -- index.html is special ; it has the news item
-    priority 2 $ build_dir </> "index.html" %> indexAction
+    priority 2 $ buildDir </> "index.html" %> indexAction
 
 
     ------------------- CSS & JS FILES -----------------
 
-    let css_js_files = [ build_dir </> "css" </> "*.css"
-                       , build_dir </> "js"  </> "*.js" ]
+    let cssJsFiles = [ buildDir </> "css" </> "*.css"
+                     , buildDir </> "js"  </> "*.js" ]
 
-    css_js_files |%> \out -> do
+    cssJsFiles |%> \out -> do
            -- from "build/css/custom.css" to "src/css/custom.css"
            -- from "build/js/script.js" to "src/js/script.js"
         let sourceFile = toSrcDir out
@@ -52,7 +48,7 @@ main = shakeArgs options $ do
 
     ------------------- OTHER FILES THAT JUST NEED COPYING -----------------
 
-    [build_dir </> file | file <- other_files_from_src] |%> \out -> do
+    [buildDir </> file | file <- otherFilesFromSrc] |%> \out -> do
         let sourceFile = toSrcDir out
         need [sourceFile]
         cmd_ "cp" "-f" sourceFile out
@@ -62,6 +58,6 @@ main = shakeArgs options $ do
 
     phony "clean" $ do
         putInfo "Cleaning files in build..."
-        removeFilesAfter build_dir ["*"]
+        removeFilesAfter buildDir ["*"]
 
 
