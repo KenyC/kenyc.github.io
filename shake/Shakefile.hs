@@ -46,6 +46,11 @@ main = shakeArgs options $ do
         need [sourceFile]
         cmd_ "yui-compressor" sourceFile "-o" out
 
+    buildDir </> "fonts"  </> "*" %> \out -> do
+        let sourceFile = toSrcDir out
+        need [sourceFile]
+        cmd_ "cp" "-f" sourceFile out
+
     ------------------- OTHER FILES THAT JUST NEED COPYING -----------------
 
     [buildDir </> file | file <- otherFilesFromSrc] |%> \out -> do

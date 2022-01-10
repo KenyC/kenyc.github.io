@@ -18,6 +18,11 @@ htmlFiles = do
     files <- getDirectoryFiles ("src" </> "contents") ["*.html"]
     return [buildDir </> file | file <- files]
 
+fontFiles :: Action [FilePath]
+fontFiles = do
+    files <- getDirectoryFiles ("src") ["fonts" </> "*"]
+    return [buildDir </> file | file <- files]
+
 cssFiles :: Action [FilePath]
 cssFiles = do
     files <- getDirectoryFiles "src" ["css" </> "*.css"]
@@ -49,7 +54,7 @@ otherFiles = do
     return [buildDir </> file | file <- otherFilesFromSrc_]
 
 allFiles :: Action [FilePath]
-allFiles =  join <$> sequence [htmlFiles, cssFiles, jsFiles, otherFiles]
+allFiles =  join <$> sequence [htmlFiles, cssFiles, jsFiles, fontFiles, otherFiles]
 
 ------------------- UTILS -----------------
 
