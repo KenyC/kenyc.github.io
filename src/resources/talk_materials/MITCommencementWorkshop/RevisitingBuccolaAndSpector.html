@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Keny Chatain (ENS/PSL)" />
+  <title>Revisiting Buccola &amp; Spector</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+  <link rel="stylesheet" href="tools/latexlookalike.css" />
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <!-- CSS added by lua-filter 'pandoc-ling' -->
+  <style>
+  .linguistic-example { 
+    margin: 0; 
+  }
+  .linguistic-example caption { 
+    margin-bottom: 0; 
+  }
+  .linguistic-example tbody { 
+    border-top: none; 
+    border-bottom: none;
+  }
+  .linguistic-example-preamble {
+    height: 1em;
+    vertical-align: top; 
+  }
+  .linguistic-example td {
+    padding-left: 0;
+    vertical-align: top;  
+  }
+  .linguistic-example-content { 
+    vertical-align: top;  
+  }
+  .linguistic-example-label {
+    vertical-align: top;
+  }
+  .linguistic-example-judgement { 
+    vertical-align: top; 
+    padding-right: 2px;
+  }
+  .linguistic-example-gloss {
+    /*width: 100px;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .linguistic-example-gloss table {
+    width: auto;
+    margin-top: 0px;
+    margin-right: 1em;
+    margin-bottom: 5px;
+  }
+  .linguistic-example-gloss tbody {
+    border-top: none; 
+    border-bottom: none;
+
+  }
+  .linguistic-example-gloss tr:first-child {
+    font-style: italic;
+  }
+  .linguistic-example-gloss td {
+    padding: 0em;
+  }
+  </style>
+        
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Revisiting Buccola &amp; Spector</h1>
+<p class="author">Keny Chatain (ENS/PSL)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+</header>
+<div class="info_box">
+<p><strong>Goal:</strong></p>
+<ul>
+<li>Discuss a generalization proposed by Buccola &amp; Spector about the interaction between modified numerals and collectives predicates.</li>
+<li>Discuss problematic cases for the generalization</li>
+<li>Show that the patterns they discuss are in fact subsumed by the <em>gather/numerous</em> distinction.</li>
+</ul>
+</div>
+<h2 id="distribution-of-the-upper-bounded-reading">Distribution of the upper-bounded reading</h2>
+<h3 id="empirical-generalization">Empirical generalization</h3>
+<p>Typically, it is thought that <em>less than</em> numerals set an upper-bound on some quantity.</p>
+<div id="ex1">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(1)</td>
+<td style="text-align: left;">a.</td>
+<td style="text-align: left;">Less than 10 dolphins jumped through the hoop.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">b.</td>
+<td style="text-align: left;"><strong>Upper-bounded TCs:</strong><br />
+<span class="math inline">\(\max \left\lbrace n \,\middle|\, n\text{ dolphins jumped through the hoop}\right\rbrace &lt; 10\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- 
+It is also thought that the literal TCs of *less than* numerals carry no existential entailments:
+
+:::ex
+If less than 10 dolphins jump through the hoop, press the green button.  
+Otherwise, press the blue button.
+::: 
+-->
+<p><strong>Dual behavior with collective predicates: <em>surround</em> vs <em>gather</em>.</strong> <span class="citation" data-cites="BuccolaSpector2016">Buccola and Spector (2016)</span> find that <em>certain</em> collective predicates do not have upper-bounded inferences:</p>
+<div id="ex2">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(2)</td>
+<td style="text-align: left;">a.</td>
+<td style="text-align: left;">Less than 10 soldiers surrounded the castle.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">b.</td>
+<td style="text-align: left;"><strong>Existential TCs:</strong><br />
+<span class="math inline">\(\exists X,\ |X| &lt; 10 \land X\text{ surrounded the castle}\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>But others do:</p>
+<div id="ex3">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(3)</td>
+<td style="text-align: left;">a.</td>
+<td style="text-align: left;">Less than 15 protestors gathered in Tahrir Square.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">b.</td>
+<td style="text-align: left;"><strong>Upper-bounded TCs:</strong><br />
+<span class="math inline">\(\max \left\lbrace n \,\middle|\, n\text{ gathered in Tahrir Square}\right\rbrace &lt; 15\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>They argue that <em>weakly distributive predicates</em> are the ones that yield <em>upper-bounded inferences</em>.</p>
+<div id="ex4">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(4)</td>
+<td style="text-align: left;"><strong>Weak distributivity (to be revised):</strong><br />
+<span class="math inline">\(P\)</span> is <em>weakly distributive</em> iff <span class="math display">\[\forall X, P(X) \land |X| \geq 2 \rightarrow \left(\exists Y, Y \prec X \land |Y| = 2 \land P(y)\right)\]</span> <em>“If P is true of a group <span class="math inline">\(X\)</span> with at least 2 members, it is true of a subgroup of <span class="math inline">\(X\)</span> with two members.”</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">upper-bounded</th>
+<th style="text-align: center;">existential</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Distributive</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">⋆</td>
+</tr>
+<tr class="even">
+<td>Weak Distributive</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">⋆</td>
+</tr>
+<tr class="odd">
+<td>Other Collectives</td>
+<td style="text-align: center;">⋆</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table>
+<h3 id="buccola-and-spectors-proposal">Buccola and Spector’s proposal</h3>
+<p>They have many proposals. Here, we discuss one of the proposals, labelled <strong>LMaxInf</strong> in the paper<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
+<p>Structure-wise, they assume <em>less than 10</em> is a numeral quantifier that can scope out of the DP.</p>
+<div id="ex5">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(5)</td>
+<td style="text-align: left;">a.</td>
+<td style="text-align: left;">Less than 10 dolphins jumped through the hoop.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">b.</td>
+<td style="text-align: left;">less than 10 λn. <span class="math inline">\(\exists\)</span> [n dolphins] jumped through the hoop<br />
+<!-- a. $\exists$ λX. [less than 10 λn. X [n dolphins]] jumped through the hoop    --></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>They model the semantics of modified numerals around a maximal informativity operator:</p>
+<div id="ex6">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(6)</td>
+<td style="text-align: left;"><span class="math inline">\([\![ \text{less than 10} ]\!](P)(w) = \exists n &lt; 10, \text{max-inf}(P)(w)(n)\)</span><br />
+“<em><strong>some</strong> maximally informative number is less than 10</em>”</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>A number <span class="math inline">\(n\)</span> is maximally informative wrt <span class="math inline">\(P\)</span> iff <span class="math inline">\(P(n)(w)\)</span> and <span class="math inline">\(P(n)\)</span> is not entailed by any <span class="math inline">\(P(m)\)</span> for <span class="math inline">\(m\neq n\)</span> such that <span class="math inline">\(P(m)(w)\)</span>.</p>
+<p>Let’s see what this entry predicts when the numeral takes high scope:</p>
+<div id="ex7">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(7)</td>
+<td style="text-align: left;" colspan="2"><strong>LF:</strong> less than 10 λn. <span class="math inline">\(\exists\)</span> [n dolphins] VP</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">a.</td>
+<td style="text-align: left;">When <strong>VP</strong> is <em>jumped</em><br />
+… ⇒ 12 dolphins jumped ⇒ 11 dolphins jumped ⇒ 10 dolphins jumped ⇒ …</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;">b.</td>
+<td style="text-align: left;">When <strong>VP</strong> is <em>surround the castle</em><br />
+… ⇎ 12 soldiers surrounded the castle ⇎ 11 soldiers surrounded the castle ⇎ 10 soldiers surrounded the castle ⇎ …</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>In <a href="#lf_jump">(7a)</a>, informativity order is the same as numerical order: the sentence has an upper-bound reading.<br />
+In <a href="#lf_jump">(7b)</a>, every number is maximally informative: no upper-bound.</p>
+<p><em>gather</em>’s entailment patterns are the same as <em>jumped</em>:</p>
+<div id="ex8">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(8)</td>
+<td style="text-align: left;">… ⇒ 12 protestors gathered ⇒ 11 protestors gathered ⇒ 10 protestors gathered ⇒ …</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Note I:</strong> the property of weak distributivity as stated by Buccola &amp; Spector is not what guarantees upper-bounded reading in their system. Rather, the following property seems important:</p>
+<div id="ex9">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(9)</td>
+<td style="text-align: left;"><strong>Weak distributivity (new):</strong><br />
+<span class="math inline">\(P\)</span> is <em>weakly distributive</em> iff <span class="math display">\[\forall X, \forall n \geq T, P(X) \land |X| = n \rightarrow \left(\exists Y, |Y| = n - 1 \land P(Y)\right)\]</span> <em>“If P is true of a group of n members with n sufficiently large, it is true of a group of <span class="math inline">\((n - 1)\)</span> members.”</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Note II:</strong> They also discuss a DP-internal scope for <em>less than 10</em>, which they need a pragmatic rule to rule out. This won’t play a role in what’s to come.</p>
+<!-- 
+We didn't discuss the DP-internal scope!
+
+:::ex
+a. **LF:** $\exists$ λX. [less than 10 λn. X [n dolphins]] jumped through the hoop   
+a. 
+… ⇎ X is 12 dolphins ⇎ X is 11 dolphins ⇎ X is 10 dolphins ⇒ …
+a. 
+… ⇒ X is 12 dolphins ⇒ X is 11 dolphins ⇒ X is 10 dolphins ⇒ …
+:::
+
+Regardless of which entailment holds true, this LF yields existential TCs: true iff some group of less than 10 dolphins jumped through the hoop.  
+-->
+<p><strong>Predictions:</strong><br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">upper-bounded</th>
+<th style="text-align: center;">existential</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Distributive</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">⋆</td>
+</tr>
+<tr class="even">
+<td>Weak Distributive</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">⋆</td>
+</tr>
+<tr class="odd">
+<td>Other Collectives</td>
+<td style="text-align: center;">⋆</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table>
+<!-- 
+To match the expected predictions, they propose the following pragmatic principle:
+
+:::ex
+**Pragmatic economy constraint:**  
+An LF φ containing a numeral n is infelicitous if, for some m distinct from n, φ is truth-conditionally equivalent to φ[n ↦ m] (the result of substituting m for n in φ).
+:::
+
+This is the case for  
+-->
+<!-- Not understanding how the reading of 'surround the castle' is preserved -->
+<h2 id="reinterpreting-the-generalization">Reinterpreting the generalization</h2>
+<h3 id="empirical-problems">Empirical problems</h3>
+<p><strong>Buccola and Spector’s generalization:</strong></p>
+<center style="font-size: 120%;">
+weakly distributive predicate <span class="math inline">\(\Leftrightarrow\)</span> upper-bounded interpretation
+</center>
+<p>We see a double dissociation:</p>
+<ol type="1">
+<li>some predicates yield upper-bounded readings but they are not <em>weakly distributive</em></li>
+<li>some predicates don’t yield upper-bounded inference while being <em>weakly distributive</em></li>
+</ol>
+<p><strong>Upper-bounded interpretations with non-weakly distributive predicates</strong><br />
+For A., predicates like <em>hold hands</em> or <em>fit together</em> are not weakly distributive</p>
+<!-- CITE Kuhn, explain the citation later -->
+<div id="ex10">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(10)</td>
+<td style="text-align: left;" colspan="2"><span class="citation" data-cites="Kuhn2020">Kuhn (2020)</span></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">a.</td>
+<td style="text-align: left;">Less than 6 people are holding hands.<br />
+</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;">b.</td>
+<td style="text-align: left;">Less than 16 pieces in this jigsaw puzzle fit together.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img src="build/holding_hands.jpg" /></p>
+<div id="ex13">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(13)</td>
+<td style="text-align: left;">… ⇎ 6 people are holding hands ⇎ 5 people are holding hands ⇎ 4 people are holding hands ⇎ …<br />
+(Or perhaps better <em>se tiennent par la main</em> “SE hold by hand”<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Weakly distributive predicates with no upper-bounded interpretations</strong><br />
+Point B. can be made with predicates like <em>cheap</em> or <em>weigh less than 5kgs</em>. There is a slight confound in that these predicates have multiple construals:</p>
+<div id="ex14">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(14)</td>
+<td style="text-align: left;" colspan="2">These bottles weigh less than 5 kgs.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">a.</td>
+<td style="text-align: left;"><strong>Distributive:</strong> each weigh less than 5 kgs.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;">b.</td>
+<td style="text-align: left;"><strong>Collective:</strong> total weight is less than 5 kgs.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>I take the line that (for these predicates at least,) there is a genuine ambiguity. One argument comes from <span class="citation" data-cites="Bar-Lev2020">Bar-Lev (2020)</span>:</p>
+<div id="ex15">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(15)</td>
+<td style="text-align: left;">a.</td>
+<td style="text-align: left;"><strong>Target:</strong><br />
+_ These bottles are cheap.<br />
+_ That’s not true! Oh you meant individually.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">b.</td>
+<td style="text-align: left;"><strong>Control:</strong><br />
+_ You went to Boston.<br />
+_ # That’s not true! Oh you meant by plane.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>I’m only interested in the collective meaning of the predicate. Under their collective reading, these predicates are weakly distributive:</p>
+<div id="ex16">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(16)</td>
+<td style="text-align: left;">a.</td>
+<td style="text-align: left;">… ⇒ 12 bottles are cheap ⇒ 11 bottles are cheap ⇒ 10 bottles are cheap ⇒ …</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">b.</td>
+<td style="text-align: left;">… ⇒ 12 bottles weigh less than 5 kgs ⇒ 11 bottles weigh less than 5 kgs ⇒ 10 bottles weigh less than 5 kgs ⇒ …</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Yet, there does not seem to be an upper-bounded collective reading with numerals like <em>less than</em></p>
+<div id="ex17">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(17)</td>
+<td style="text-align: left;">a.</td>
+<td style="text-align: left;">Less than 10 bottles are cheap.<br />
+≠ <em>any group of 10 bottles or more is not cheap</em></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">b.</td>
+<td style="text-align: left;">Less than 10 bottles weigh less than 15 kg.<br />
+≠ <em>any group of 10 bottles or more weighs 15kg or more</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="another-angle-gather-type-and-numerous-type">Another angle: <em>gather</em>-type and <em>numerous</em>-type</h3>
+<p>What do <em>held hands</em>, <em>gather</em> and <em>fit together</em> have in common?<br />
+They belong to the class of <em>gather</em>-type predicates</p>
+<p><em>Gather</em>-type predicates are predicates that can yield a collective meaning in combination with <em>all</em>:</p>
+<div id="ex18">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(18)</td>
+<td style="text-align: left;">a.</td>
+<td style="text-align: left;">All the protestors gathered in Tahrir Square.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">b.</td>
+<td style="text-align: left;">All the pupils held hands.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;">c.</td>
+<td style="text-align: left;">All the pieces fit together.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>By contrast, <em>numerous</em>-type predicates only yield distributive readings:</p>
+<div id="ex19">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(19)</td>
+<td style="text-align: left;">a.</td>
+<td style="text-align: left;"># All the soldiers are numerous.<br />
+</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">b.</td>
+<td style="text-align: left;">All the bottles weigh 5kg.<br />
+≠ total weight is 5kg</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>It seems part of Buccola and Spector’s generalization can be rephrased as follows:</p>
+<div id="ex20">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(20)</td>
+<td style="text-align: left;">Upper-bounded <em>less than</em> modified numerals have the same distributional requirements as <em>all</em>, i.e. they only yield collective readings with <em>gather</em>-type predicates.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Wait! What about <em>surround the castle</em>? It seems fine with <em>all</em>:</p>
+<div id="ex21">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(21)</td>
+<td style="text-align: left;" colspan="2">COCA examples</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">a.</td>
+<td style="text-align: left;">✓ All the men surround the hole with their rifles pointing at it.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;">b.</td>
+<td style="text-align: left;">✓ All the nations surrounded me, but in the name of the Lord I cut them off.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>That’s because the gather/numerous is actually a 3-way distinction (<span class="citation" data-cites="Kuhn2020">Kuhn (2020)</span>):</p>
+<div id="ex22">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(22)</td>
+<td style="text-align: left;">a.</td>
+<td style="text-align: left;">All the protestors gathered in Tahrir Square. (<em>gather</em>-type)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">b.</td>
+<td style="text-align: left;">?All the children built the boat. (<em>Dowty</em>-type)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;">c.</td>
+<td style="text-align: left;">*All the books in this shop are cheap. (<em>numerous</em>-type)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This is probably not a matter of “dialects” <span class="citation" data-cites="Kuhn2020">(Kuhn 2020)</span>, as has been said <span class="citation" data-cites="Winter2000">(<strong>Winter2000?</strong>)</span>. Judgments get crispier with non-partitive quantifiers, cleanly setting apart <em>gather</em>-type from <em>Dowty</em>-type:</p>
+<div id="ex23">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(23)</td>
+<td style="text-align: left;">a.</td>
+<td style="text-align: left;">Most boys gathered.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">b.</td>
+<td style="text-align: left;">*Most boys built the boat.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;">c.</td>
+<td style="text-align: left;">*Most boys surrounded the castle.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>surround the castle</em> is probably Dowty-type:</p>
+<div id="ex24">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(24)</td>
+<td style="text-align: left;">* Most soldiers surrounded the castle.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- TODO: talk about what to do with the existential reading -->
+<h2 id="directions-for-analysis">Directions for analysis</h2>
+<p>The original generalization by Buccola &amp; Spector came with a principled analysis.</p>
+<p>Making sense of the new generalization will require answering: the following question: what makes a <em>gather</em>-type predicate ? Authors on this issue share an intuition ; but it hasn’t been easy to spell it out.</p>
+<p><strong>Underlying Intuition:</strong> gather-type predicates have downward inferences (aka “subentailments”).</p>
+<div id="ex25">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(25)</td>
+<td style="text-align: left;" colspan="2"><strong>Numerous-type predicates</strong></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">a.</td>
+<td style="text-align: left;">The apples are numerous.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;">b.</td>
+<td style="text-align: left;">The bottles cost $10.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ex26">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(26)</td>
+<td style="text-align: left;" colspan="2"><strong>Gather-type predicates</strong></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">a.</td>
+<td style="text-align: left;">The protestors gathered.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;">b.</td>
+<td style="text-align: left;">The professors agreed.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">c.</td>
+<td style="text-align: left;">The laureates sat together.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;">d.</td>
+<td style="text-align: left;">The pupils were holding hands.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- 
+Simple attempts at formalizing this intuition fail:
+
+**Gather-type as weak distributitivity.** Already seen ; counter-examples are *held hands*, *fit together*
+
+
+**Gather-type as (event-less) stratified reference [@Champollion2017].** Every individual which the predicate is true of can be decomposed in a sum of "*small*" individuals in the denotation of the predicate.
+
+:::ex
+$\forall x, P(x) \rightarrow \exists X, \bigoplus X = x \land \forall y\in X, P(y) \land |y| \leq \epsilon$  
+where $\epsilon$ is "small"
+:::
+
+*weigh less than 10 kgs* is wrongly predicted to be gather-type. 
+-->
+<p><strong>Gather-type predicates as eventful stratified reference <span class="citation" data-cites="Kuhn2020">(Kuhn 2020)</span>.</strong> Every event in the denotation of the predicate of can be decomposed in a sum of “<em>small</em>” events in the denotation of the predicate.</p>
+<div id="ex27">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(27)</td>
+<td style="text-align: left;"><span class="math inline">\(\forall e, P(e) \rightarrow \exists E, \bigoplus E = e \land \forall e&#39;\in E, P(e&#39;) \land \mu(e&#39;) \leq \epsilon\)</span><br />
+where <span class="math inline">\(\epsilon\)</span> is “small”</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>To the extent that an event of 6 bottles weighing less than 10kg is not composed of smaller events of 2 bottles weighing less than 10kg, we correctly rule out the undesirable meanings.</p>
+<h2 id="problem">Problem</h2>
+<p><strong>Conceptual challenges:</strong> why would the semantics of quantifiers be sensitive to this property?</p>
+<div id="ex28">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(28)</td>
+<td style="text-align: left;"><span class="math inline">\([\![\text{all}]\!]= \lambda P. \lambda Q: \mathtt{StratRef}(Q). Q(\iota P)\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>In Champollion and Kuhn’s work, the stratified property is listed as a presupposition of the quantifier</li>
+<li>It is an essentially arbitrary restriction on a meaning that would otherwise be compatible with all predicates.</li>
+<li>Why not a language where quantifiers only combine with <em>numerous</em>-type predicates?</li>
+</ul>
+<div id="ex29">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(29)</td>
+<td style="text-align: left;">An innovative revolutionary new quantifier: <em>yall</em><br />
+<span class="math inline">\([\![\text{yall}]\!]= \lambda P. \lambda Q: \neg\mathtt{StratRef}(Q). Q(\iota P)\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Empirical challenges:</strong> Various manipulations that disrupt the stratification do not disrupt <em>gather</em>-typeness. For instance, adding in an adjunct</p>
+<div id="ex30">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(30)</td>
+<td style="text-align: left;">All the pilgrims sat together in one large circle.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Stratification isn’t even closed under conjunction, but <em>gather</em>-typeness is</p>
+<div id="ex31">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(31)</td>
+<td style="text-align: left;">Most people in this picture are both kissing and holding hands</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="conclusion">Conclusion</h2>
+<div class="{info_box}">
+<p><strong>Conclusion</strong></p>
+<ul>
+<li>Buccola &amp; Spector’s generalization can be seen as showing that the <em>gather/numerous</em> distinction is active for modified numerals.</li>
+<li>Modified numerals simply have an “escape reading”, the existential reading</li>
+<li><strong>Idea:</strong>
+<ul>
+<li><em>gather</em>-type predicate shouldn’t be characterized extensionally (what inferential properties they have)</li>
+<li>they should perhaps be described intensionally (what they’re made up of)</li>
+<li>In particular, <em>gather</em>-type predicates frequently seem to imply notions of reciprocity, sameness, etc. A closer inspection of these semantic concepts might explain their co-occurrence with plural quantifiers <span class="citation" data-cites="KampReyle2013">(Kamp and Reyle 2013)</span>.</li>
+<li>Compare this with the pseudo-<em>gather</em>-type predicates like <em>weigh less than 5 kg</em>.</li>
+</ul></li>
+</ul>
+</div>
+<!-- 
+## Idea
+
+Attempts have been made to characterize *gather*-type predicates *extensionally* (what inferences they give rise to). What if we try to give an *intensional characterization* (what they are made up of)?
+
+Gather-type predicate list:
+
+  - *same-like meaning?:* gather
+  - *negative form:* disagree, disperse,
+  - *formed from spatial together:* sit together, left together, 
+  - *part of a reciprocal alternation:* meet, discuss, agree, held hands, shook hands, hug, consistent
+  - *formed from sidi terms:* be the same age, have similar names
+
+The meaning of some of these verbs can be described in terms familiar from the reciprocal literature:
+
+ - **Strong Reciprocal:** $\forall y, \forall x\neq y, R(x)(y)$  
+   *be the same age, have similar names, sit together, left together, agree, …*
+ - **Weak Reciprocal:** $\forall y, \exists x, R(x)(y) \land \forall x, \exists y, R(x)(y)$
+   *held hands, ?sit together, ?meet, hug, agree, …*
+
+
+Variable bound in the singular with their restriction.
+
+Places where this is helpful:
+
+  - Plural bound pronouns
+
+All the boys think they'
+-->
+<h2 id="bibliography">Bibliography</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-Bar-Lev2020" class="csl-entry" role="doc-biblioentry">
+Bar-Lev, Moshe E. 2020. <span>“Specification and <span>Homogeneity</span> in <span>Plural Predication</span>.”</span>
+</div>
+<div id="ref-BuccolaSpector2016" class="csl-entry" role="doc-biblioentry">
+Buccola, Brian, and Benjamin Spector. 2016. <span>“Modified Numerals and Maximality.”</span> <em>Linguistics and Philosophy</em> 39 (3): 151–99.
+</div>
+<div id="ref-KampReyle2013" class="csl-entry" role="doc-biblioentry">
+Kamp, Hans, and Uwe Reyle. 2013. <em>From Discourse to Logic: <span>Introduction</span> to Model-Theoretic Semantics of Natural Language, Formal Logic and Discourse Representation Theory</em>. Vol. 42. <span>Springer Science &amp; Business Media</span>.
+</div>
+<div id="ref-Kuhn2020" class="csl-entry" role="doc-biblioentry">
+Kuhn, Jeremy. 2020. <span>“Gather/Numerous as a Mass/Count Opposition.”</span> <em>Natural Language Semantics</em>, 1–29.
+</div>
+</div>
+<h2 id="footnotes">Footnotes</h2>
+<section class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>For helpful discussion, I thank Benjamin Spector. I thank Julia Chatain for the illustration.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>Proposal <strong>SMaxInf</strong>, which divorces maximality from the numeral, is judged more adequate by the authors. The difference lies in the possibility of certain split-scope interpretations in modal environments. I shan’t be talking about split-scope here, so I focus on the proposal which leads to the least structural ambiguity.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><div id="ex11">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(11)</td>
+<td style="text-align: left;">a.</td>
+<td style="text-align: left;">You know how dangerous sneezing is for Dima.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">b.</td>
+<td style="text-align: left;">You know how dangerous holding hands is for Dima.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;">c.</td>
+<td style="text-align: left;">#You know how dangerous gathering in Tahrir Square is for Dima.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ex12">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td>(12)</td>
+<td style="text-align: left;">a.</td>
+<td style="text-align: left;"><div>
+<div class="linguistic-example-gloss">
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Tu</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">You</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">sais</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">know</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">à</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">to</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">quel</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">which</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">point</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">degree</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">éternuer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sneeze</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">est</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">is</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">dangereux</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">dangerous</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">pour</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">for</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Dima</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Dima</td>
+</tr>
+</tbody>
+</table>
+</div>
+You know how dangerous sneezing is for Dima.
+</div></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">b.</td>
+<td style="text-align: left;"><div>
+<div class="linguistic-example-gloss">
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Tu</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">You</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">sais</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">know</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">à</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">to</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">quel</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">which</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">point</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">degree</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">se</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SE</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">tenir</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">hold</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">par</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">by</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">la</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">the</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">main</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">hand</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">est</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">is</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">dangereux</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">dangerous</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">pour</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">for</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Dima</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Dima</td>
+</tr>
+</tbody>
+</table>
+</div>
+#You know how dangerous hand-holding is for Dima.
+</div></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;">c.</td>
+<td style="text-align: left;"><div>
+<div class="linguistic-example-gloss">
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Tu</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">You</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">sais</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">know</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">à</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">to</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">quel</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">which</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">point</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">degree</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">se</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SE</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">rassembler</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">gather</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">sur</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">on</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">la</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">the</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">place</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">square</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Tahrir</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Tahrir</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">est</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">is</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">dangereux</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">dangerous</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">pour</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">for</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Dima</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Dima</td>
+</tr>
+</tbody>
+</table>
+</div>
+#You know how dangerous gathering in Tahrir Square is for Dima.
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The preceding contrast are different for English and French. <em>holding hands</em> can be dangeorous for one person. The French equivalent cannot.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</body>
+</html>
