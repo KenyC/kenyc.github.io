@@ -1,0 +1,157 @@
+body {
+	font-family:  "CMU Serif";
+	margin-left:  20%;
+	margin-right: 20%;
+	text-align:   justify;
+}
+
+h1 {
+	margin-bottom: 0px;
+	text-align:    center;
+}
+
+
+img {
+	width: 100%;
+}
+
+h2 {
+	counter-increment: sections;
+    counter-reset: subsections subsubsections;
+    /*counter-reset: subsubsections;*/
+}
+
+h2::before {
+  content: counter(sections, upper-roman)".";
+  right: 25px;
+  margin-right: 15px;
+}
+
+h3 {
+	counter-increment: subsections;
+    counter-reset: subsubsections;
+}
+
+h3::before {
+  content: counter(sections, upper-roman)"."counter(subsections)"";
+  /*right: 50px;*/
+  margin-right: 15px;
+}
+
+h4 {
+	counter-increment: subsubsections;
+}
+
+h4::before {
+  content: counter(sections)"."counter(subsections)"."counter(subsubsections);
+  /*right: 50px;*/
+  margin-right: 20px;
+}
+/*
+.example {
+counter-reset: list;
+margin: 0; 
+
+}
+
+.example > li {
+	list-style: none;
+	position: relative; 
+}
+
+.example > li:before {
+	counter-increment: list;
+	content: "("  ") ";
+	position: absolute;
+	left: -1.4em; 
+}
+
+
+*/
+/*
+*/
+
+ol {
+	list-style-type: upper-alpha;
+	margin-left: 20px;
+}
+
+.footnotes ol {
+	list-style-type: decimal;
+}
+
+ol.example {
+	list-style-type: decimal;
+  	margin-left: 0px;
+
+}
+
+ol.example > li {
+	margin-top:      20px;
+	margin-bottom: : 20px;
+}
+
+.example ol {
+  margin-left: 0px;
+  list-style-type: lower-alpha;
+  margin-top:      0px;
+  padding-top:     0px;
+  margin-bottom:   3px;
+  padding-left:    25px;
+}
+p {
+	margin-top: 13px;
+	margin-bottom: 13px;
+}
+.author {
+	text-align: center;
+	margin-top: 0px;
+	font-size: 120%;
+}
+
+th, td {
+	padding-right: 15px;
+}
+
+.strikeout {
+	text-decoration: line-through;
+}
+
+.quote {
+	margin-left:   50px;
+	margin-right:  50px;
+	/*font-style: italic; */
+}
+
+#title-block-header {
+	margin-bottom: 40px;
+}
+
+.info_box {
+	border: solid 2px black;
+	border-radius: 10px;
+	padding-left:  10px;
+	padding-right: 10px;
+	margin-top:    10px;
+	margin-bottom: 10px;
+	background-color: #CDCDCD;
+}
+
+.info_box center:first-child {
+	font-size: 150%;
+}
+
+.gray {
+	color: #666666;
+}
+
+a {
+	text-decoration: none;
+	color: #007acc;
+	box-shadow: none;
+}
+
+a:hover, a:focus, a:active {
+	color: #000068;
+	box-shadow: 0 1px 0 0 currentColor;
+}

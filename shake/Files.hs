@@ -8,7 +8,7 @@ import Development.Shake.FilePath
 ------------------- CONSTANTS -----------------
 
 buildDir :: FilePath
-buildDir = "build"
+buildDir = "docs"
 
 
 ------------------- FILES TO BUILD -----------------

@@ -1,0 +1,1930 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Keny Chatain" />
+  <title>Cumulativity from Homogeneity</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+  <link rel="stylesheet" href="build/latexlookalike.css" />
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <!-- CSS added by lua-filter 'pandoc-ling' -->
+  <style>
+  .linguistic-example { 
+    margin: 0; 
+  }
+  .linguistic-example caption { 
+    margin-bottom: 0; 
+  }
+  .linguistic-example tbody { 
+    border-top: none; 
+    border-bottom: none;
+  }
+  .linguistic-example-preamble {
+    height: 1em;
+    vertical-align: top; 
+  }
+  .linguistic-example td {
+    padding-left: 0;
+  }
+  .linguistic-example-content { 
+    vertical-align: top;  
+  }
+  .linguistic-example-label {
+    vertical-align: top;
+  }
+  .linguistic-example-judgement { 
+    vertical-align: top; 
+    padding-right: 2px;
+  }
+  </style>
+        
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#cumulativity-from-homogeneity">Cumulativity from Homogeneity</a>
+<ul>
+<li><a href="#introduction">Introduction</a>
+<ul>
+<li><a href="#pluralities-and-plural-phenomena">Pluralities and plural phenomena</a></li>
+<li><a href="#cumulativity">Cumulativity</a></li>
+<li><a href="#the-paradox-of-cumulative-readings-of-every">The paradox of cumulative readings of <em>every</em></a></li>
+<li><a href="#not-just-every-cumulative-readings-of-singular-quantifiers">Not just <em>every</em>: cumulative readings of singular quantifiers</a></li>
+<li><a href="#summary">Summary</a></li>
+</ul></li>
+<li><a href="#cumulativity-from-the-perspective-of-homogeneity">Cumulativity from the perspective of homogeneity</a>
+<ul>
+<li><a href="#the-peculiar-truth-conditions-of-negative-sentences">The peculiar truth-conditions of negative sentences</a></li>
+<li><a href="#a-theory-of-negative-sentences">A theory of negative sentences</a></li>
+<li><a href="#summary-1">Summary</a></li>
+</ul></li>
+<li><a href="#strengthening-in-positive-sentences">Strengthening in positive sentences</a>
+<ul>
+<li><a href="#exhaustive-participation-inferences">Exhaustive participation inferences</a></li>
+<li><a href="#yardsticks-analogies-with-known-implicatures">Yardsticks: analogies with known implicatures</a></li>
+<li><a href="#recursive-exhaustification">Recursive exhaustification</a></li>
+<li><a href="#deriving-exhaustive-participation-via-recursive-exhaustification.">Deriving exhaustive participation via recursive exhaustification.</a></li>
+<li><a href="#the-other-cases">The other cases</a></li>
+</ul></li>
+<li><a href="#conclusion">Conclusion</a>
+<ul>
+<li><a href="#the-theory">The theory</a></li>
+<li><a href="#the-implications">The implications</a></li>
+<li><a href="#whats-next">What’s next?</a></li>
+<li><a href="#acknowledgments">Acknowledgments</a></li>
+</ul></li>
+<li><a href="#outline">Appendix: chapter abstracts</a></li>
+<li><a href="#appendix-other-cases-of-cumulative-quantification">Appendix: other cases of cumulative quantification</a></li>
+<li><a href="#bibliography">Bibliography</a></li>
+<li><a href="#footnotes">Footnotes</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="cumulativity-from-homogeneity">Cumulativity from Homogeneity</h1>
+<p><strong>In a nutshell,</strong> this dissertation offers a new theory of cumulativity, using insights drawn from homogeneity.</p>
+<center>
+Dissertation outline <a href="#outline">↵</a>
+</center>
+<h2 id="introduction">Introduction</h2>
+<h3 id="pluralities-and-plural-phenomena">Pluralities and plural phenomena</h3>
+<p>Just as easily as they can refer to single entities, natural languages can refer to collections of entities, hereafter <em>pluralities</em>.</p>
+<div id="ex1">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(1)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">Joana opened the box and found a gift inside it.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content">Joana and Marius opened the boxes and found gifts inside them.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>These collections of entities are just like regular entities (<span class="citation" data-cites="Link1983">Link (1983)</span>). They can have properties of their own, different from the properties of their parts.</p>
+<div id="ex2">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(2)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">The potatoes are too heavy for me to carry.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content">Potato n°1 is too heavy for me to carry.<br />
+…<br />
+Potato n°215 is too heavy for me to carry.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>With certain predicates <span class="math inline">\(P\)</span>, there is a systematic connection between whether <span class="math inline">\(P\)</span> is true of a plurality and whether it is true of the plurality’s parts.</p>
+<div id="ex3">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(3)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">Joana and Marius smiled.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content">Joana smiled.<br />
+Marius smiled.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ex4">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(4)</td>
+<td style="text-align: left;" class="linguistic-example-content"><span class="math inline">\(\textsf{smiled}(X) \Leftrightarrow \forall x\prec X, \textsf{smiled}(x)\)</span> <!-- $\textsf{smiled}$ is true of $X$ if and only if $\textsf{smiled}$ is true of every singularity in $X$.   --></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- For one-place predicates, two situations:
+
+  - **mixed/collective predicates** (e.g. *too heavy to carry*): there is no clear connection between being true of the whole and true of its parts.
+  - **(lexically) distributive predicates** (e.g. *smile*): true of the whole iff true of all parts
+ -->
+<p><strong>Question:</strong> <em>what about two-place predicates?</em></p>
+<h3 id="cumulativity">Cumulativity</h3>
+<div id="ex5">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(5)</td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels cracked the nuts.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Many situations make this sentences true:<br />
+<img src="resources/cumulative_situations.svg" alt="cracking_situations" /></p>
+<div id="ex6">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(6)</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Cumulative truth-conditions<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>:</strong> <span class="math inline">\(\forall\exists\land\forall\exists\)</span><br />
+<em>Every nut was cracked by a squirrel.</em><br />
+<em>Every squirrel cracked a nut.</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span class="math inline">\(\rightsquigarrow\)</span> <strong>simplifying assumption:</strong> no collective action occurs.</p>
+<div class="info_box">
+<center>
+<strong>Cumulative Denotation</strong> (with simplifying assumption)
+</center>
+<p><span class="math display">\[\textsf{crack}(Y)(X) \Leftrightarrow 
+\begin{array}{rl}
+&amp;\forall x\prec X, \exists y\prec Y, \textsf{crack}(y)(x)\\
+\land&amp;
+\forall y\prec Y, \exists x\prec X, \textsf{crack}(y)(x)
+\end{array}
+\]</span></p>
+</div>
+<p>The cumulative truth-conditions seem quite general for transitive predicates in English.</p>
+<div id="ex7">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(7)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">The children ate the cookies.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content">The two girls lifted the two boxes. <span class="citation" data-cites="Kratzer2003">(Kratzer 2003)</span></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">c.</td>
+<td style="text-align: left;" class="linguistic-example-content">The professors graded the tests.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">d.</td>
+<td style="text-align: left;" class="linguistic-example-content">…</td>
+</tr>
+</tbody>
+</table>
+</div>
+Not just English: Shona <span class="citation" data-cites="Ferch2013">(Ferch 2013)</span>, Karitiana <span class="citation" data-cites="MullerNegrao2012">(Müller and Negrão 2012)</span>, Modern Hebrew <span class="citation" data-cites="Gil1982">(Gil 1982)</span>, Dutch <span class="citation" data-cites="Gil1982">(Gil 1982)</span>.<br />
+
+<center>
+<span class="math inline">\(\Rightarrow\)</span> cumulativity universal <span class="citation" data-cites="Kratzer2003">(Kratzer 2003)</span>: all verbs have cumulative denotations
+</center>
+<h3 id="the-paradox-of-cumulative-readings-of-every">The paradox of cumulative readings of <em>every</em></h3>
+<div id="ex8">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(8)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels cracked every nut.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels cracked the nuts.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">c.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Truth-conditions:</strong><br />
+<em>Every squirrel cracked a nut.</em><br />
+<em>Every nut was cracked by a squirrel.</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>If <em>every</em> is a regular universal quantifier, and composition runs as in <span class="citation" data-cites="HeimKratzer1998">Heim and Kratzer (1998)</span>:</p>
+<div id="ex9">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(9)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content"><img src="resources/the_squirrels_cracked_every_nut.svg" title="fig:" alt="alt" /></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels cracked every nut.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">c.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>By compositional rules:</strong><br />
+The squirrels cracked nut 1<br />
+and the squirrels cracked nut 2<br />
+and the squirrels cracked nut 3<br />
+…<br />
+<span class="math inline">\(\forall x\in \textsf{nut}, \textsf{crack}(x)(\iota\textsf{squirrels})\)</span></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">d.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>By cumulative denotation of <em>crack</em>:</strong><br />
+Every squirrel cracked nut 1 and nut 1 was cracked by some squirrel<br />
+and every squirrel cracked nut 2 and nut 2 was cracked by some squirrel<br />
+and every squirrel cracked nut 3 and nut 3 was cracked by some squirrel<br />
+…<br />
+<span class="math inline">\(\forall x\in \textsf{nut},\left(\forall y\prec \textsf{squirrels}, \textsf{crack}(x)(y)\right)\land\left(\exists y\prec \textsf{squirrels}, \textsf{crack}(x)(y)\right)\)</span></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">e.</td>
+<td style="text-align: left;" class="linguistic-example-content">Every squirrel cracked nut 1<br />
+and every squirrel cracked nut 2<br />
+and every squirrel cracked nut 3<br />
+…<br />
+<span class="math inline">\(\forall x\in \textsf{nut},\forall y\prec \textsf{squirrels}, \textsf{crack}(x)(y)\)</span></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">f.</td>
+<td style="text-align: left;" class="linguistic-example-content">Every squirrel cracked every nut.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This paradox has elicited a diverse range of reactions:</p>
+<ul>
+<li><em>evidence for the necessity of events and Neo-Davidsonian separation:</em><br />
+<span class="citation" data-cites="Schein1993">Schein (1993)</span>, <span class="citation" data-cites="Kratzer2003">Kratzer (2003)</span>, …</li>
+<li><em>cumulative composition and cross-categorial pluralities:</em><br />
+<span class="citation" data-cites="HaslingerSchmitt2018">Haslinger and Schmitt (2018)</span>, <span class="citation" data-cites="HaslingerSchmitt2020">Haslinger and Schmitt (2020)</span>, …</li>
+<li><em>“every NP” is or can be a referential expression:</em><br />
+<span class="citation" data-cites="Champollion2010">Champollion (2010)</span>, <span class="citation" data-cites="Landman2000">Landman (2000)</span>, … <!--    - *Team credit and weak meanings:*  
+   @Bayer2013, @Lasersohn1990, ...
+ --></li>
+</ul>
+<p><strong>Claim:</strong> as far as this data point is concernced, enriched composition is not needed.</p>
+<p>Before turning to this claim, I will extend our dataset somewhat.</p>
+<h3 id="not-just-every-cumulative-readings-of-singular-quantifiers">Not just <em>every</em>: cumulative readings of singular quantifiers</h3>
+<div class="info_box">
+<p><strong>Claim:</strong> all quantifiers over singularities (atomically distributive) yield a cumulative-like reading in object position. This reading is just as unexpected as the cumulative reading of <em>every</em>.</p>
+<center>
+The NPs Verb’ed Quantifier …
+</center>
+</div>
+<p><strong>Supporting cases</strong></p>
+<ol type="1">
+<li>Cumulative readings of <em>each</em><br />
+<span class="math inline">\(\rightsquigarrow\)</span> <em>the three video-games taught each quarterback two new plays.</em></li>
+<li><strong>Cumulative readings of non-partitive <em>most</em></strong><br />
+<span class="math inline">\(\rightsquigarrow\)</span> <em>the squirrels cracked most nuts.</em></li>
+<li>Cumulative readings of Lebanese Arabic SAT numerals.<br />
+<span class="math inline">\(\rightsquigarrow\)</span> <em>the squirrels cracked thirty nut-<span class="math inline">\(\varnothing\)</span>.</em></li>
+</ol>
+<p><strong>The case of non-partitive <em>most</em>.</strong> There is a problem of cumulative readings of non-universals as well.</p>
+<div id="ex10">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(10)</td>
+<td style="text-align: left;" colspan="2" class="linguistic-example-preamble">Non-partitive <em>most</em></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">Most athletes lifted the truck. <span class="citation" data-cites="Crnic2010">(Crnič 2010)</span></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content">Most lawyers<sub>7</sub> hired a secretary they<sub>7</sub> liked. <span class="citation" data-cites="KampReyle2013">(Kamp and Reyle 2013)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This motivates treating non-partitive <em>most</em> as counting singularities:</p>
+<div id="ex11">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(11)</td>
+<td style="text-align: left;" class="linguistic-example-content"><span class="math inline">\([\![\text{most athletes}]\!](q) =\#\left\lbrace x\in \textsf{athlete} \middle| \textsf{q}(x)\right\rbrace &gt; \frac12 \#\textsf{athlete}\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>There is a cumulative-like reading to <em>most</em>:</p>
+<div id="ex12">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(12)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels cracked most nuts.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Truth-conditions:</strong><br />
+Most nuts were cracked by a squirrel.<br />
+Every squirrel cracked a nut.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>If a) <em>crack</em> has a cumulative denotation, b) <em>most</em> means the same as it does in <a href="#most">(11)</a>, then this reading is unexpected:</p>
+<div id="ex13">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(13)</td>
+<td style="text-align: left;" class="linguistic-example-content"><span class="math inline">\(\#\left\lbrace x\in \textsf{nut} \middle| \textsf{crack}(x)(\iota\textsf{squirrels})\right\rbrace &gt; \frac12 \#\textsf{nut}\)</span><br />
+<span class="math inline">\(\Leftrightarrow\#\left\lbrace x\in \textsf{nut} \middle| \forall y\prec\iota\textsf{squirrels}, \textsf{crack}(x)(y)\right\rbrace &gt; \frac12 \#\textsf{nut}\)</span><br />
+<em>“More than half the nuts were cracked by every squirrel.”</em><br />
+<span class="math inline">\(\neq\)</span> attested truth-conditions</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="summary">Summary</h3>
+<div id="ex14">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(14)</td>
+<td style="text-align: left;" colspan="2" class="linguistic-example-preamble"><strong>Dataset</strong></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels cracked the nuts</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels cracked every nut.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">c.</td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels cracked most nuts.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">d.</td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels cracked thirty nut-<span class="math inline">\(\varnothing\)</span>. (Lebanese Arabic)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">e.</td>
+<td style="text-align: left;" class="linguistic-example-content">The 3 video-games taught every quarterback two new plays. <span class="citation" data-cites="Schein1993">(Schein 1993)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="info_box">
+<center>
+The problem of cumulative readings of quantifiers
+</center>
+<ul>
+<li>For simple transitive sentences, cumulative truth-conditions can be derived via cumulative denotations for verbs.</li>
+<li>However, cumulative denotations generate too strong a reading when singular quantifiers like <em>every</em> are involved.</li>
+<li>The problem is quite general and extends to singular quantifiers of various sorts</li>
+</ul>
+</div>
+<h2 id="cumulativity-from-the-perspective-of-homogeneity">Cumulativity from the perspective of homogeneity</h2>
+<p><strong>Observation:</strong> if negative sentences were all that we had to account for, solving the problem of cumulative readings of quantifiers would be extremely simple.</p>
+<h3 id="the-peculiar-truth-conditions-of-negative-sentences">The peculiar truth-conditions of negative sentences</h3>
+<p>The truth-conditions of negative cumulative sentences sentences are not what we expect: the truth-conditions of <a href="#negcumul">(15)</a> are not simply the complement of the cumulative truth-conditions.</p>
+<div id="ex15">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(15)</td>
+<td style="text-align: left;" colspan="2" class="linguistic-example-preamble">The squirrels didn’t crack the nuts.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Attested truth-conditions:</strong> <span class="math inline">\(\neg\exists\exists\)</span><br />
+<em>No squirrel cracked any nut.</em></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Expected truth-conditions:</strong> <span class="math inline">\(\neg\forall\exists\vee\neg\forall\exists\)</span><br />
+<em>Not every squirrel cracked a nut</em> <em>or not every nut was cracked by a squirrel.</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>There is <em>homogeneity</em>. <em>Homogeneity</em> is also attested in intransitive sentences.</p>
+<div id="ex16">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(16)</td>
+<td style="text-align: left;" colspan="2" class="linguistic-example-preamble">Joana and Marius didn’t smile.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Attested truth-conditions:</strong> <span class="math inline">\(\neg\exists\)</span><br />
+<em>Neither Joana nor Marius smiled</em></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Expected truth-conditions:</strong> <span class="math inline">\(\neg\forall\)</span><br />
+<em>They didn’t both smile.</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>There is also homogeneity in cumulative readings with <em>every</em>:</p>
+<div id="ex17">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(17)</td>
+<td style="text-align: left;" colspan="2" class="linguistic-example-preamble">The squirrels didn’t crack every nut.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Attested truth-conditions:</strong> <span class="math inline">\(\neg\forall\exists\)</span><br />
+<em>Not every nut was cracked by a squirrel.</em></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Expected truth-conditions:</strong> <span class="math inline">\(\neg\forall\exists\vee\neg\forall\exists\)</span><br />
+<em>Not every nut was cracked by a squirrel</em> <em>or not every squirrel cracked a nut.</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Interestingly, cumulative sentences with <em>every</em> yield weaker meanings under negation than do ordinary cumulative sentences.</p>
+<div id="ex18">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(18)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels cracked the nuts.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels cracked every nut.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">c.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Truth-conditions:</strong> <span class="math inline">\(\forall\exists\land\forall\exists\)</span><br />
+<em>Every squirrel cracked a nut.</em><br />
+<em>Every nut was cracked by a squirrel.</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ex19">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(19)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels didn’t crack the nuts.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Truth-conditions:</strong> <span class="math inline">\(\neg\exists\exists\)</span><br />
+<em>No squirrel cracked any nut.</em><br />
+</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">c.</td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels didn’t crack every nut.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">d.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Truth-conditions:</strong> <span class="math inline">\(\neg\forall\exists\)</span><br />
+<em>Not every nut was cracked by a squirrel.</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="a-theory-of-negative-sentences">A theory of negative sentences</h3>
+<p>Why is this observation important? We now have conflicting evidence regarding the meaning of <em>crack</em></p>
+<div id="ex20">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(20)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels cracked the nuts.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels didn’t crack the nuts.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Had we started with negative sentences, we would have written the denotation of <em>crack</em> differently.</p>
+<div id="ex21">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(21)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels didn’t crack the nuts.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><span class="math inline">\(\neg\textsf{cracked}(\iota\textsf{squirrels})(\iota\textsf{nuts})\)</span> (= expected truth-conditions)<br />
+<span class="math inline">\(\Leftrightarrow\)</span><br />
+<span class="math inline">\(\neg\exists x\prec \iota\textsf{squirrels}, \exists y \prec \iota\textsf{nuts}, \textsf{cracked}(y)(x)\)</span> (= attested truth-conditions)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Call the meaning in <a href="#weak">(22 a)</a> is the <em>existential denotation for crack</em>.</p>
+<div id="ex22">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(22)</td>
+<td style="text-align: left;" colspan="2" class="linguistic-example-preamble">Weak and strong meaning for <em>crack</em></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Existential denotation for <em>crack</em></strong><br />
+<span class="math inline">\(\textsf{crack}(Y)(X) \Leftrightarrow \exists x\prec X, \exists y \prec Y, \textsf{crack}(y)(x)\)</span></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Cumulative denotation for <em>crack</em></strong><br />
+<span class="math inline">\(\textsf{crack}(Y)(X) \Leftrightarrow \begin{array}{rl} &amp;\forall x\prec X, \exists y\prec Y, \textsf{crack}(y)(x)\\ \land&amp; \forall y\prec Y, \exists x\prec X, \textsf{crack}(y)(x) \end{array}\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Unlike the positive case, the existential denotation works in both negative sentences with and without <em>every</em>.</p>
+<!-- :::ex
+a. The squirrels didn't crack the nuts.
+a. $\neg\textsf{cracked}(\iota\textsf{squirrels})(\iota\textsf{nuts})$  
+   $\Leftrightarrow \neg\exists x\prec \iota\textsf{squirrels}, \exists y \prec \iota\textsf{nuts}, \textsf{cracked}(y)(x)$  
+   $=$ attested truth-conditions
+::: -->
+<div id="ex23">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(23)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels didn’t crack every nut.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><img src="resources/the_squirrels_didnt_crack_every_nut.svg" title="fig:" alt="negationevery" /></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">c.</td>
+<td style="text-align: left;" class="linguistic-example-content"><span class="math inline">\(\neg\forall y\in \textsf{nut},\ \textsf{cracked}(y)(\iota\textsf{squirrels})\)</span><br />
+<span class="math inline">\(\Leftrightarrow \neg\forall y \in \textsf{nut}, \exists x\prec \iota\textsf{squirrels}, \textsf{cracked}(y)(x)\)</span><br />
+<span class="math inline">\(=\)</span> attested truth-conditions</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The success of the <em>existential denotation</em> cannot be understated: it covers all other cases considered and more.</p>
+<p><strong>The case of <em>most</em></strong></p>
+<div id="ex24">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(24)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels didn’t crack most nuts.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Attested truth-conditions:</strong><br />
+<em>It’s not that the case that most nuts were cracked by a squirrel.</em></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">c.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Expected truth-conditions:</strong><br />
+<em>It’s not that the case that most nuts were cracked by a squirrel.</em><br />
+<em>or not every squirrel cracked a nut.</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ex25">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(25)</td>
+<td style="text-align: left;" class="linguistic-example-content"><span class="math inline">\(\neg\#\left\lbrace x\in \textsf{nut} \middle| \textsf{crack}(x)(\iota\textsf{squirrels})\right\rbrace &gt; \frac12 \#\textsf{nut}\)</span><br />
+<span class="math inline">\(\Leftrightarrow\#\left\lbrace x\in \textsf{nut} \middle| \exists y\prec\iota\textsf{squirrels}, \textsf{crack}(x)(y)\right\rbrace \leq \frac12 \#\textsf{nut}\)</span><br />
+<em>“Less than half the nuts were cracked by a squirrel.”</em><br />
+= attested truth-conditions</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>The video-game sentence.</strong></p>
+<div id="ex26">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(26)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">The video-games didn’t teach every quarterback two new plays.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Attested truth-conditions:</strong><br />
+<em>It’s not that the case that every quarterback was taught two new plays by some video-game or other.</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ex27">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(27)</td>
+<td style="text-align: left;" class="linguistic-example-content"><span class="math inline">\(\neg\forall qb\in \textsf{quarterback}, \exists P\in \textsf{plays}, |P|=2 \land \forall p\prec P, \textsf{taught}(p)(qb)(\iota\textsf{video-games})\)</span><br />
+<span class="math inline">\(\Leftrightarrow\neg\forall qb\in \textsf{quarterback}, \exists P\in \textsf{plays}, |P|=2 \land \forall p\prec P, \exists vg\prec \textsf{video-games},\ \textsf{taught}(p)(qb)(vg)\)</span><br />
+<em>“Not every quartereback was taught two plays by a video-game.”</em><br />
+= attested truth-conditions</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="summary-1">Summary</h3>
+<div id="ex28">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(28)</td>
+<td style="text-align: left;" colspan="3" class="linguistic-example-preamble"><strong>Negative dataset</strong></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: right;" class="linguistic-example-judgement"><sup><span class="math inline">\(\checkmark\)</span></sup></td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels didn’t crack the nuts.<br />
+<span class="math inline">\(\rightsquigarrow\)</span> not [<em>some</em> squirrel cracked <em>some</em> nuts]</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: right;" class="linguistic-example-judgement"><sup><span class="math inline">\(\checkmark\)</span></sup></td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels didn’t crack every nut.<br />
+<span class="math inline">\(\rightsquigarrow\)</span> not [every nut was cracked by <em>some</em> nuts]</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">c.</td>
+<td style="text-align: right;" class="linguistic-example-judgement"><sup><span class="math inline">\(\checkmark\)</span></sup></td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels didn’t crack most nuts.<br />
+<span class="math inline">\(\rightsquigarrow\)</span> not [most nuts were cracked by <em>some</em> nuts]</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">d.</td>
+<td style="text-align: right;" class="linguistic-example-judgement"><sup><span class="math inline">\(\checkmark\)</span></sup></td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels didn’t crack thirty nut-<span class="math inline">\(\varnothing\)</span>. (Lebanese Arabic)<br />
+<span class="math inline">\(\rightsquigarrow\)</span> not [thirty nuts were cracked by <em>some</em> nuts]</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">e.</td>
+<td style="text-align: right;" class="linguistic-example-judgement"><sup><span class="math inline">\(\checkmark\)</span></sup></td>
+<td style="text-align: left;" class="linguistic-example-content">The 3 video-games didn’t teach every quarterback two new plays. <span class="citation" data-cites="Schein1993">(Schein 1993)</span><br />
+<span class="math inline">\(\rightsquigarrow\)</span> not [every quarterback was taught two plays by <em>some</em> video-games]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="info_box">
+<center>
+Proposal: cumulativity from homogeneity
+</center>
+<ol type="1">
+<li><p>Transitive verbs do not have cumulative denotations. They underlyingly have existential denotations. (cf <span class="citation" data-cites="Bayer2013">Bayer (2013)</span>, <span class="citation" data-cites="Landman1989">Landman (1989)</span>)</p>
+<p><span class="math display">\[\textsf{crack}(Y)(X) \Leftrightarrow \exists x\prec X, \exists y \prec Y, \textsf{crack}(y)(x)\]</span></p></li>
+</ol>
+<center>
+…
+</center>
+</div>
+<!-- 
+:::info_box
+<center>Summary</center>
+
+  - Cumulative readings of quantifiers raise no particular issues in negative sentences.
+  - Weak denotation for verbs straightforwardly predicts the truth-conditions of all cumulative sentences.
+  - In positive sentences, weak denotations miss exhaustive participation inferences, which are the truth-value gap.
+:::
+ -->
+<h2 id="strengthening-in-positive-sentences">Strengthening in positive sentences</h2>
+<h3 id="exhaustive-participation-inferences">Exhaustive participation inferences</h3>
+<p>In positive sentences, adopting the <em>existential denotation</em> misses some inferences of positive sentences (represented in gray).</p>
+<div id="ex29">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(29)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels cracked the nuts.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Truth-conditions:</strong><br />
+Some squirrels cracked some nuts.<br />
+<span class="gray">Every squirrel cracked a nut.</span><br />
+<span class="gray">Every nut was cracked by a squirrel.</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ex30">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(30)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels cracked every nut.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Truth-conditions:</strong><br />
+Every nut was cracked by a squirrel.<br />
+<span class="gray">Every squirrel cracked a nut.</span><br />
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ex31">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(31)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels cracked most nuts.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Truth-conditions:</strong><br />
+Most nuts were cracked by a squirrel.<br />
+<span class="gray">Every squirrel cracked a nut.</span><br />
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>There is a family resemblance between the gray inferences (<span class="math inline">\(\forall \exists^*\)</span>) ; I will call them <em>exhaustive participation inferences</em>.</p>
+<p><strong>Bar-Lev’s account of homogeneity.</strong> A similar problem arise outside of cumulativity: to account for the truth-contions of <a href="#simplesmile">(32 a)</a>, we may want to posit the existential denotation in <a href="#simplesmile">(32 b)</a>.</p>
+<div id="ex32">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(32)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">The children didn’t smile.<br />
+<span class="math inline">\(\rightsquigarrow\)</span> <em>no child slept.</em></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><span class="math inline">\(\textsf{smiled}(X) \Leftrightarrow \exists x\prec X, \textsf{smiled}(x)\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ex33">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(33)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">The children smiled.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Truth-conditions:</strong><br />
+Some child smiled.<br />
+<span class="gray">Every child smiled.</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>To account for the presense of the gap in the case of <a href="#barlev">(33)</a>, <span class="citation" data-cites="Bar-Lev2018">M. Bar-Lev (2018)</span> proposes that a mechanism akin to implicatures, Free Choice implicatures specifically. Namely, the underlying (black) meaning is <em>strengthened</em> to the observed meaning (black+gray).</p>
+<p><strong>Rationale:</strong></p>
+<ul>
+<li>implicatures are polarity-sensitive ; so are these inferences.</li>
+<li>implicatures are context-sensitive ; so are these inferences <span class="citation" data-cites="Malamud2012">(Malamud 2012)</span></li>
+<li>children don’t derive (certain) implicatures at the same rate that adults do ; same for the inference in <a href="#barlev">(33 b)</a> <span class="citation" data-cites="TieuEtAl2015">(Tieu et al. 2015)</span></li>
+</ul>
+<div class="info_box">
+<center>
+Proposal: cumulativity from homogeneity
+</center>
+<ol type="1">
+<li><p>Transitive verbs do not have cumulative denotations. They underlyingly have existential denotations. (cf <span class="citation" data-cites="Bayer2013">Bayer (2013)</span>, <span class="citation" data-cites="Landman1989">Landman (1989)</span>)</p>
+<p><span class="math display">\[\textsf{crack}(Y)(X) \Leftrightarrow \exists x\prec X, \exists y \prec Y, \textsf{crack}(y)(x)\]</span></p></li>
+<li><p>In positive sentences, <em>exhaustive participation <u>implicatures</u></em> arise. They arise through a process of recursive exhaustification.</p></li>
+</ol>
+<center>
+<span class="smallcaps">exh</span> <span class="smallcaps">exh</span> The squirrels cracked every nut.
+</center>
+</div>
+<h3 id="yardsticks-analogies-with-known-implicatures">Yardsticks: analogies with known implicatures</h3>
+<p><strong>Analogy with Free Choice implicatures.</strong> <span class="citation" data-cites="Bar-Lev2018">(M. Bar-Lev 2018)</span></p>
+<p>If <a href="#impl">(34)</a> is a case of implicature, it is a case of an underlying existential (<span class="math inline">\(\exists\)</span>) being strengthened to a universal (<span class="math inline">\(\forall\)</span>):</p>
+<div id="ex34">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(34)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">The children slept.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Truth-conditions:</strong><br />
+Some child slept.<br />
+<span class="gray">Every child slept.</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ex35">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(35)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">The children didn’t sleep.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Truth-conditions:</strong><br />
+No child slept.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>In FC implicatures, an underlyingly disjunctive meaning (<span class="math inline">\(\vee\)</span>) is strengthened in positive sentences to a conjunctive meaning (<span class="math inline">\(\land\)</span>).</p>
+<div id="ex36">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(36)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">You can have ice-cream or cake.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Truth-conditions:</strong><br />
+You either can have ice-cream or can have cake.<br />
+<span class="gray">You can have ice-cream.</span><br />
+<span class="gray">You can have cake.</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ex37">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(37)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">You can’t have ice-cream or cake.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Truth-conditions:</strong><br />
+You can neither have ice-cream or cake.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Analogy with distributive implicatures.</strong> The analogy with FC implicatures is not very apt for cumulative sentences. The desired strengthening is not simply converting an existential to a universal.</p>
+<div id="ex38">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(38)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels cracked every nut.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Truth-conditions:</strong><br />
+Every nut was cracked by some squirrel.<br />
+<span class="gray">Every squirrel cracked a nut.</span><br />
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>But it does resemble another implicature process: <em>distributive implicatures</em>.</p>
+<div id="ex39">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(39)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">Every ambassador speaks Mandarin or Tagalog.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Truth-conditions:</strong><br />
+Every ambassador speaks Mandarin or Tagalog. (<span class="math inline">\(\forall \gg \vee\)</span>)<br />
+<span class="gray">Some ambassador speaks Mandarin.</span><br />
+<span class="gray">Some ambassador speaks Tagalog.</span><br />
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Generalizing <span class="math inline">\(\vee\)</span> to <span class="math inline">\(\exists\)</span>, this is precisely the type of strengthening observed in positive sentences.</p>
+<div id="ex40">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(40)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels cracked every nut.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Truth-conditions:</strong><br />
+Every nut was cracked by Scrat or Waggs or Acorn or … (<span class="math inline">\(\forall \gg \exists\)</span>)<br />
+<span class="gray">Scrat cracked some nut.</span><br />
+<span class="gray">Waggs cracked some nut.</span><br />
+<span class="gray">Acorn cracked some nut.</span><br />
+…</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Distributive implicature also arise with other quantifiers than <em>every</em>.</p>
+<div id="ex41">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(41)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">Most ambassadors speak Mandarin or Tagalog.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Truth-conditions:</strong><br />
+Most ambassadors speak Mandarin or Tagalog. (most $ $)<br />
+<span class="gray">Some ambassador speaks Mandarin.</span><br />
+<span class="gray">Some ambassador speaks Tagalog.</span><br />
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ex42">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(42)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels cracked most nuts.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Truth-conditions:</strong><br />
+Most nuts were cracked by Scrat or Waggs or Acorn or … (most <span class="math inline">\(\gg \exists\)</span>)<br />
+<span class="gray">Scrat cracked some nut.</span><br />
+<span class="gray">Waggs cracked some nut.</span><br />
+<span class="gray">Acorn cracked some nut.</span><br />
+…</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr />
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Sentence</strong></td>
+<td style="text-align: left;">You can have ice-cream or cake.</td>
+<td style="text-align: left;">The children slept.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Underlying meaning</strong></td>
+<td style="text-align: left;"><span class="math inline">\(\lozenge a \lor\lozenge b\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\exists x\prec\iota\textsf{children}, \textsf{slept}(x)\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Implicature</strong></td>
+<td style="text-align: left;"><span class="math inline">\(\lozenge a \land\lozenge b\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\forall x\prec\iota\textsf{children}, \textsf{slept}(x)\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Sentence</strong></td>
+<td style="text-align: left;">Everyone speaks Mandarin or Tagalog.</td>
+<td style="text-align: left;">The squirrels cracked every nut.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Underlying meaning</strong></td>
+<td style="text-align: left;"><span class="math inline">\(\forall x, m(x)\vee t(x)\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\forall y\in\textsf{nut}, \exists x\prec\iota\textsf{squirrels}, \textsf{cracked}(x)(y)\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Implicature</strong></td>
+<td style="text-align: left;"><span class="math inline">\(\exists x, m(x)\land\exists x, t(x)\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\forall x\prec\iota\textsf{squirrels}, \exists y\in\textsf{nut}, \textsf{cracked}(x)(y)\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="recursive-exhaustification">Recursive exhaustification</h3>
+<p>Canonical implicatures:</p>
+<div id="ex43">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(43)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">Some people at my office are nice.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Truth-conditions:</strong><br />
+Some people at my office are nice.<br />
+<span class="gray">Not all people at my office are nice</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>In the grammatical tradition <span class="citation" data-cites="ChierchiaEtAl2012">(Chierchia, Fox, and Spector 2012)</span>, these implicatures are derived by application of a covert operator <span class="smallcaps">exh</span>, whose meaning is akin to <em>only</em>:</p>
+<div id="ex44">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(44)</td>
+<td style="text-align: left;" class="linguistic-example-content"><span class="smallcaps">exh</span> some people at my office are nice.<br />
+<strong>Prejacent:</strong> some people at my office are nice.<br />
+<strong>Alternatives:</strong><br />
+<span class="math inline">\(\circ\)</span> all of them are<br />
+<strong>Strengthened meaning:</strong><br />
+Some people at my office are nice<br />
+<span class="gray">but not all are.</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>These inferences we are interested in are different: they are not simply the negation of an alternative to the sentence</p>
+<div id="ex45">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(45)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">You can have ice cream or cake. (<span class="gray">you can have both</span>)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content">Everyone here speaks Tagalog or Mandarin. (<span class="gray">some speak Tagalog ; some speak Mandarin</span>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>FC implicatures <span class="citation" data-cites="Fox2007">(Fox 2007)</span> and distributive implicatures <span class="citation" data-cites="Bar-LevFox2016">(M. E. Bar-Lev and Fox 2016)</span> are derived via recursive exhaustification.</p>
+<div id="ex46">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(46)</td>
+<td style="text-align: left;" class="linguistic-example-content"><span class="smallcaps">exh</span> <span class="smallcaps">exh</span> You can have ice-cream or cake.<br />
+<strong>Prejacent:</strong> <span class="smallcaps strikeout">exh</span> You can have ice-cream or cake.<br />
+<strong>Alternatives:</strong><br />
+<span class="math inline">\(\circ\)</span> <span class="smallcaps">exh</span> You can have ice-cream.<br />
+<span class="math inline">\(\circ\)</span> <span class="smallcaps">exh</span> You can have cake.<br />
+<strong>Strengthened meaning:</strong><br />
+You either can have ice-cream or can have cake.<br />
+<span class="gray">and it’s not the case that you can only have ice-cream.</span><br />
+<span class="gray">and it’s not the case that you can only have cake.</span><br />
+<span class="math inline">\(\approx\)</span> <em>you can have both</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ex47">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(47)</td>
+<td style="text-align: left;" class="linguistic-example-content"><span class="smallcaps">exh</span> <span class="smallcaps">exh</span> Every ambassador speaks Mandarin or Tagalog.<br />
+<strong>Prejacent:</strong> <span class="smallcaps strikeout">exh</span> Every ambassador speaks Mandarin or Tagalog.<br />
+<strong>Alternatives:</strong><br />
+<span class="math inline">\(\circ\)</span> <span class="smallcaps">exh</span> every ambassador speaks Mandarin.<br />
+<span class="math inline">\(\approx\)</span> every ambassador speaks Mandarin and no ambassador speaks Tagalog.<br />
+<span class="math inline">\(\circ\)</span> <span class="smallcaps">exh</span> every ambassador speaks Tagalog.<br />
+<span class="math inline">\(\approx\)</span> every ambassador speaks Tagalog and no ambassador speaks Mandarin.<br />
+<strong>Strengthened meaning:</strong><br />
+Every ambassador speaks Mandarin or Tagalog<br />
+<span class="gray">and it’s not the case that every ambassador speaks Mandarin and no ambassador speaks Tagalog.</span><br />
+<span class="gray">and it’s not the case that every ambassador speaks Tagalog and no ambassador speaks Mandarin.</span><br />
+<span class="math inline">\(\rightsquigarrow\)</span> <em>some ambassador speaks Mandarin ; some ambassador speaks Tagaglog.</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="deriving-exhaustive-participation-via-recursive-exhaustification.">Deriving exhaustive participation via recursive exhaustification.</h3>
+<p>By analogy to FC and distributive implicatures:</p>
+<p><strong>Assumption:</strong> <em>expressions referring to pluralities have their sub-pluralities as their alternatives.</em></p>
+<div id="ex48">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(48)</td>
+<td style="text-align: left;" class="linguistic-example-content"><span class="smallcaps">exh</span> <span class="smallcaps">exh</span> Joana and Marius smiled.<br />
+<strong>Prejacent:</strong> Joana or Marius smiled<br />
+<strong>Alternatives:</strong><br />
+<span class="math inline">\(\circ\)</span> <span class="smallcaps">exh</span> Joana smiled.<br />
+<span class="math inline">\(\circ\)</span> <span class="smallcaps">exh</span> Marius smiled.<br />
+<strong>Strengthened meaning:</strong><br />
+Joana or Marius smiled<br />
+<span class="gray">and it’s not the case that only Joana smile</span><br />
+<span class="gray">and it’s not the case that only Marius smile</span><br />
+<span class="math inline">\(\approx\)</span> <em>both did</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ex49">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(49)</td>
+<td style="text-align: left;" class="linguistic-example-content"><span class="smallcaps">exh</span> <span class="smallcaps">exh</span> the squirrels cracked every nut<br />
+<strong>Prejacent:</strong> every nut was cracked by Scrat or Waggs.<br />
+<strong>Alternatives:</strong><br />
+<span class="math inline">\(\circ\)</span> <span class="smallcaps">exh</span> every nut was cracked by Scrat.<br />
+<span class="math inline">\(\approx\)</span> every nut was cracked by Scrat and no nuts by Waggs.<br />
+<span class="math inline">\(\circ\)</span> <span class="smallcaps">exh</span> every nut was cracked by Waggs.<br />
+<span class="math inline">\(\approx\)</span> every nut was cracked by Waggs and no nuts by Scrat.<br />
+<strong>Strengthened meaning:</strong><br />
+Every nut was cracked by Scrat or Waggs.<br />
+<span class="gray">and it’s not the case that every nut was cracked by Scrat and no nut by Waggs</span><br />
+<span class="gray">and it’s not the case that every nut was cracked by Waggs and no nut by Scrat.</span><br />
+<span class="math inline">\(\approx\)</span> <em>Scrat cracked some nuts ; Waggs cracked some nuts</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Assumption:</strong> <em><span class="smallcaps">exh</span> is inserted at any predicative position as much it can be</em> (cf also <span class="citation" data-cites="Magri2011">Magri (2011)</span>)</p>
+<div id="ex50">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(50)</td>
+<td style="text-align: left;" class="linguistic-example-content"><img src="resources/exh_the_squirrels_cracked_every_nut.svg" title="fig:" alt="doubleexh" /></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Exception:</strong> <em><span class="smallcaps">exh</span> cannot be inserted or is vacuous under negation</em> <span class="citation" data-cites="FoxSpector">(<strong>FoxSpector?</strong>)</span></p>
+<h3 id="the-other-cases">The other cases</h3>
+<p><strong>Cumulative readings without quantifiers</strong></p>
+<div id="ex51">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(51)</td>
+<td style="text-align: left;" class="linguistic-example-content"><span class="smallcaps">exh</span> <span class="smallcaps">exh</span> the squirrels <span class="smallcaps">exh</span> <span class="smallcaps">exh</span> cracked the nuts.<br />
+<span class="math inline">\(\rightsquigarrow\)</span> <span class="smallcaps">exh</span> <span class="smallcaps">exh</span> the squirrels cracked every nut.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Cumulative readings of <em>most</em>.</strong></p>
+<div id="ex52">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(52)</td>
+<td style="text-align: left;" class="linguistic-example-content"><span class="smallcaps">exh</span> <span class="smallcaps">exh</span> the squirrels cracked most nuts.<br />
+<span class="math inline">\(\rightsquigarrow\)</span> every squirrel cracked a nut.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ex53">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(53)</td>
+<td style="text-align: left;" class="linguistic-example-content">Most nuts were cracked by Scrat or Waggs.<br />
+<span class="math inline">\(\rightsquigarrow\)</span> <span class="gray">Scrat cracked some nuts</span><br />
+<span class="math inline">\(\rightsquigarrow\)</span> <span class="gray">Scrat cracked some nuts</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="conclusion">Conclusion</h2>
+<h3 id="the-theory">The theory</h3>
+<div class="info_box">
+<center>
+Proposal: cumulativity from homogeneity
+</center>
+<ol type="1">
+<li><p>Transitive verbs do not have cumulative denotations. They underlyingly have existential denotations. (cf <span class="citation" data-cites="Bayer2013">Bayer (2013)</span>, <span class="citation" data-cites="Landman1989">Landman (1989)</span>)</p>
+<p><span class="math display">\[\textsf{crack}(Y)(X) \Leftrightarrow \exists x\prec X, \exists y \prec Y, \textsf{crack}(y)(x)\]</span></p></li>
+<li><p>In positive sentences, <em>exhaustive participation <u>implicatures</u></em> arise. They arise through a process of recursive exhaustification.</p></li>
+</ol>
+<center>
+<span class="smallcaps">exh</span> <span class="smallcaps">exh</span> The squirrels cracked every nut.
+</center>
+</div>
+<h3 id="the-implications">The implications</h3>
+<ul>
+<li>No need for new rules of compositions or new meanings for <em>every</em> <span class="citation" data-cites="Schein1993">(Schein 1993)</span>, but need for “fancy implicatures” (independently attested)</li>
+<li>Show the importance of negative sentences in understanding the problem of cumulativity.</li>
+<li>A general approach to cumulative readings of quantification.</li>
+</ul>
+<h3 id="whats-next">What’s next?</h3>
+<p>Not all verbs yield cumulative truth-conditions.</p>
+<div id="ex54">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(54)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">The squirrels outweigh the nuts.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Incorrect truth-conditions:</strong><br />
+<em>Every squirrel outweigh a nut.</em><br />
+<em>Every nut is outweighed by a squirrel.</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Yet, the mechanism of recursive exhaustification predicts cumulative readings across-the-board!</p>
+<p><strong>Question:</strong> <em>What conditions the presence of cumulativity and homogeneity?</em><br />
+<span class="math inline">\(\rightsquigarrow\)</span> event structure.</p>
+<h3 id="acknowledgments">Acknowledgments</h3>
+<p>First and foremost, my committee. Here are some quotes that I think capture their essence:</p>
+<ul>
+<li>Martin Hackl: <em>“this will probably be the best year of your academic life.”</em></li>
+<li>Roger Schwarzschild: <em>“what’s wrong with Neo-Dave semantics?”</em></li>
+<li>Danny Fox: <em>“but why?”</em></li>
+<li>Gennaro Chierchia: <em>“how can one be so twisted?”</em> (not directed at me, to be fair)</li>
+</ul>
+<p>My family: my gravity-defying brother, my interpolating sister, my snaky mother, my parsley-loving father.</p>
+<p>And many friends and colleagues: Mead Street household, Ling-16, Ling-15, office mates, and especially Sherry C. and her passion for bird-related video games, the Saturday Stroll gang, the board gamers, my friend from LCE Maya N., friends from ENS (provincials not excluded), friends from LLG, the committee baby, the Romance boys, Nina H. &amp; Viola S., an anonymous fellow who went to work around 7am, a great blue heron that one day, Widmerpool’s all too familiar quirks, ….</p>
+<h2 id="outline">Appendix: chapter abstracts</h2>
+<p>Outline of the dissertation:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Chapter 0:</strong></td>
+<td style="text-align: left;">weak meanings for cumulativity</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Chapter I:</strong></td>
+<td style="text-align: left;">event-less analysis of cumulativity/homogeneity</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Chapter II:</strong></td>
+<td style="text-align: left;">homogeneity and cumulativity extend to non-plurals like group nouns and substance nounds</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Chapter III:</strong></td>
+<td style="text-align: left;">more general event-based analysis of cumulativity and homogeneity</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Chapter IV:</strong></td>
+<td style="text-align: left;">comparison to other event-based approaches</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Chapter V:</strong></td>
+<td style="text-align: left;">typology of homogeneity and partial analysis of the typology</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Chapter VI:</strong></td>
+<td style="text-align: left;">connections to distributivity</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Chapter VII:</strong></td>
+<td style="text-align: left;">non-local cumulativity and alternative compositional approaches to cumulativity</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Chapter 0:</strong> Weak meanings for cumulativity</p>
+<p>In this chapter, I present cumulative readings. I show that while cumulative readings of referential expressions can receive a simple account, cumulative readings of singular quantifiers seem to challenge standard assumptions about composition. The goal of this chapter is to explain the answer to this challenge pursued in this work. I show that standard assumptions can be maintained if we recognize that cumulative readings are in fact the product of two meaning components: the weak existential meaning and the exhaustive participation inference. The weak existential meaning corresponds to the underlying meaning cumulative truth-conditions and arises through standard compositions rule. It is unaffected by context. The exhaustive participation inference, by contrast, can be cancelled in context and is not present under negation. Connecting this division between existential meanings and exhaustive participation inferences to <span class="citation" data-cites="Bar-Lev2018">M. Bar-Lev (2018)</span> ’s work on homogeneity/non-maximality, I propose that exhaustive participation inferences are the result of pragmatic strengthening.</p>
+<p><strong>Chapter I:</strong> Exhaustive participation as a distributive implicature</p>
+<p>This chapter is the first implementation of the program laid out in the previous chapter. I start from the simple idea that the weak existential meanings are encoded in the meaning of the verb. From there, I observe that the exhaustive participation inferences are analogous to Free Choice, in the intransitive case, and distributive implicatures, in the transitive case. Joining two threads in the implicature literature (<span class="citation" data-cites="Bar-LevFox2016">M. E. Bar-Lev and Fox (2016)</span>, <span class="citation" data-cites="Fox2007">Fox (2007)</span>), I derive both Free Choice and distributive implicatures through the same mechanism of recursive exhaustification. With this background in place, I use recursive exhaustification to derive the exhaustive participation inferences of cumulative sentences. The resulting theory captures not only the cumulative readings of singular quantifiers but also the subject/object asymmetries associated with these quantifiers as well as more complicated cases involving multiple quantifiers.</p>
+<p><strong>Chapter II:</strong> Homogeneity and cumulativity: parts and groups</p>
+<p>This chapter is empirical. Its goal is to show that the analysis of homogeneity/cumulativity presented in chapter 1 is too narrow in its purview. Besides pluralities, groups and materially complex objects give rise to both homogeneity and cumulative-like readings. I observe, following previous literature, that these readings are not always available and that there are generalizations on when such readings are available. Unfortunately, I then move on to show that there does not seem to be a way to extend the theory of chapter 1 to the cases here, without missing some of the important generalizations revealed by the empirical investigation. Another analysis is needed.</p>
+<p><strong>Chapter III:</strong> Event parts for homogeneity/cumulativity</p>
+<p>This chapter aims to reduce the phenomenon of homogeneity/cumulativity observed in plurals, groups and complex objects to the parthood structure of events. The generalization is that a homogeneous predicate is a predicate which is true of events with a complex part-whole relation. Based on this generalization, I propose a different analysis of the weak existential meaning of chapter 1. The new analysis is founded on the notion part of events. This proposal sheds light on which predicates give rise to homogeneity and which ones don’t. Furthermore, the introduction of events in the system also allows for a derivation of <em>exhaustive participation inferences</em> without recursive exhaustification, while preserving the good predictions of chapter 1. Because this account of cumulativity relies on the ontology of events rather than the logic of Neo-Davidsonian semantics, it evades the problems discussed in chapter 2 for the event semantics.</p>
+<p><strong>Chapter IV:</strong> Why events for cumulativity?</p>
+<p>This chapter is a critical retrospection on event accounts of cumulativity (<span class="citation" data-cites="Schein1993">Schein (1993)</span>, <span class="citation" data-cites="Kratzer2003">Kratzer (2003)</span>, <span class="citation" data-cites="Champollion2016">Champollion (2016)</span>, <span class="citation" data-cites="Ferreira2005">Ferreira (2005)</span>). In this chapter, I try to understand why events figure so prominently in many previous accounts of plural semantics. I show that it is not events themselves but the Neo-Davidsonian logic which is critical to the success of the event theories. Abstracting away the event component, I show that this logic has resemblances to dynamic theories of cumulativity. The analogy between dynamic semantics and event semantics also reveals a problem in the event account of cumulative readings of <em>every</em>. Downward-entailing quantification is known but <em>prima facie</em> manageable issue of event semantics. I show that the combination of cumulativity and downward-entailing quantification creates insurmountable scope paradoxes.</p>
+<p><strong>Chapter V:</strong> Collectivity</p>
+<p>This chapter attempts to push further the characterization of homogeneity by investigating collective predication. In this chapter, I propose a tripartite typology of collective and non-collective predicates with respect to their homogeneity properties. I show that this typology partially lines up with traditional typologies of predicates in the plural semantics literature. In the second part of this chapter, I investigate the mereological properties of collective and non-collective predicates, using the inferential properties of these predicates as evidence. This investigation allows me to derive some (but not all) aspects of this typology of homogeneity within the framework of chapter 4.</p>
+<p><strong>Chapter VI:</strong> Distributivity</p>
+<p>This chapter assesses the feasibility of reducing phrasal distributivity to cumulativity or vice-versa. Since homogeneity arises in both cases, it seems desirable to find a way to unite the two phenomena. I discuss the work of <span class="citation" data-cites="Bar-Lev2018">M. Bar-Lev (2018)</span> who attempts such a reduction. In this work, homogeneous cumulative operators are assumed, whose granularity is controlled by contextually provided covers. However, this umbrella approach must assume that in certain cases, there are systematic correlations between the choice of the predicate and the nature of the cover, independent from context, and that, in other cases, the choice of the cover is simply determined by context, independently from the predicate. This dual state of affair point to a different non-parsimonious explanation: there are two sources for homogeneity ; one is a distributivity operator with covers determined by context only and the other is the predicate itself, as assumed in this work.</p>
+<p><strong>Chapter VII:</strong> Loose ends: non-local cumulativity and homogeneity removal</p>
+<p>This chapter discusses some loose ends of the analysis of cumulativity. Previous has pointed to the possibility of cumulative readings across non-finite clause boundaries (<span class="citation" data-cites="BeckSauerland2000">Beck and Sauerland (2000)</span>, <span class="citation" data-cites="Beck2000">Beck (2000)</span>, <span class="citation" data-cites="Sauerland1998">Sauerland (1998)</span>) and even finite clause boundaries (<span class="citation" data-cites="Schmitt2013">Schmitt (2013)</span>, <span class="citation" data-cites="Schmitt2017">Schmitt (2017)</span>, <span class="citation" data-cites="Schmitt2019">Schmitt (2019)</span>, <span class="citation" data-cites="HaslingerSchmitt2018">Haslinger and Schmitt (2018)</span>). Most of these cases cannot be dealt with within this work’s theory. I show some properties of biclausal cumulativity by which it differs from monoclausal cumulativity (cumulative readings across negation and cumulative readings of quantifiers) and speculate that the biclausal cases are derived by an altogether different mechanism. Finally, I turn to homogeneity removal by quantifiers. These properties can be explained by hard-wiring exhaustification in the meaning of these quantifiers but the proposed account will not be compelling.</p>
+<h2 id="appendix-other-cases-of-cumulative-quantification">Appendix: other cases of cumulative quantification</h2>
+<p><strong>The case of <em>each</em>.</strong></p>
+<div id="ex55">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(55)</td>
+<td style="text-align: left;" colspan="2" class="linguistic-example-preamble"><em>each</em> <span class="citation" data-cites="ThomasSudo2016">(Thomas and Sudo 2016)</span></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">The three video-games taught each quarterback two new plays.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Cumulative truth-conditions:</strong><br />
+<em>Every one of the quarterback was taught two plays by one of the video-games.</em><br />
+<em>Every one of the video-games taught one of the quarterbacks some play.</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>If <em>taught</em> has a cumulative denotation, this is unexpected:</p>
+<div id="ex56">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(56)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">The three video-games taught each quarterback two new plays.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content">The three video-games taught quarterback 1 two new plays<br />
+and the three video-games taught quarterback 2 two new plays<br />
+and the three video-games taught quarterback 3 two new plays<br />
+and the three video-games taught quarterback 4 two new plays<br />
+…</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">c.</td>
+<td style="text-align: left;" class="linguistic-example-content">Every video-game taught quarterback 1 some plays<br />
+and every video-game taught quarterback 2 some plays<br />
+and every video-game taught quarterback 3 some plays<br />
+and every video-game taught quarterback 4 some plays<br />
+…</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>The case of Lebanese Arabic<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> SAT numerals.</strong> <span class="citation" data-cites="Ouwayda2017">Ouwayda (2017)</span> notes that in Lebanese Arabic, numeral DPs above 10 must be headed by singular nouns. When they are, they are either singular-agreeing or plural-agreeing.</p>
+<div id="ex57">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(57)</td>
+<td style="text-align: left;" colspan="6" class="linguistic-example-header linguistic-example-content"><strong>Verb agreement</strong></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">tleetiin</td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">walad</td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">akal-<span class="math inline">\(\varnothing\)</span>/-u</td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">ʔaaleb</td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">gato</td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">keemel.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;">thirty</td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">child.SG</td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">ate-3rd.SG/PL</td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">pie</td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">cake</td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">complete</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" colspan="6" class="linguistic-example-translation linguistic-example-content">Thirty children ate-SG/-PL a whole cake</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ex58">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(58)</td>
+<td style="text-align: left;" colspan="5" class="linguistic-example-header linguistic-example-content"><strong>Bound pronuns</strong></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">saʔalt</td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">tleetin</td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">walad</td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">ʕan</td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">bayy-u/on</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;">asked.1st.SG</td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">twenty</td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">child.SG</td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">about</td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">father-his/their</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" colspan="5" class="linguistic-example-translation linguistic-example-content">I asked thirty boys about his/their father.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>I refer to these two cases as <em>singular-agreeing transdecimal numerals</em> (SAT numerals) and <em>plural-agreeing transdecimal numerals</em> (PAT numerals). We’ll focus on SAT numerals.</p>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Thirty boy<span class="math inline">\(_1\)</span>-SG … V-PL … pro<span class="math inline">\(_1\)</span>-PL …</td>
+<td style="text-align: right;"><strong>PAT numerals</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Thirty boy<span class="math inline">\(_1\)</span>-SG … V-SG … pro<span class="math inline">\(_1\)</span>-SG …</td>
+<td style="text-align: right;"><strong>SAT numerals</strong></td>
+</tr>
+</tbody>
+</table>
+<p>SAT numerals are what you would expect a singular quantifier to be: they do not yield collective interpretations.</p>
+<div id="ex59">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(59)</td>
+<td style="text-align: left;" colspan="6" class="linguistic-example-header linguistic-example-content"><strong>Only distributive interpretations with mixed predicates and singular agreement</strong></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">tleetiin</td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">walad</td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">akal-<span class="math inline">\(\varnothing\)</span></td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">ʔaaleb</td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">gateau</td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">keemel.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;">thirty</td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">child.SG</td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">ate-3rd<strong>.SG</strong></td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">pie</td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">cake</td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">complete</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" colspan="6" class="linguistic-example-translation linguistic-example-content">Thirty children ate<strong>-SG</strong> a whole cake. (<span class="math inline">\(\checkmark\)</span>one cake each, *one cake for everyone)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ex60">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(60)</td>
+<td style="text-align: left;" colspan="6" class="linguistic-example-header linguistic-example-content"><strong>Only distributive interpretations when binding in the singular</strong></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">nejjaħet</td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">ʕeshriin</td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">benet</td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">baʕd-ma</td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">s<sup>ʕ</sup>ellaħet</td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">maʃruuʕ-<strong>ah</strong></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;">passed.1s</td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">twenty</td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">girl-ø</td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">after</td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">graded.1s</td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">project-<strong>her</strong></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" colspan="6" class="linguistic-example-translation linguistic-example-content">I passed twenty girls after I graded <strong>her</strong> project (<span class="math inline">\(\checkmark\)</span>individual projects, *collective project)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ex61">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(61)</td>
+<td style="text-align: left;" colspan="3" class="linguistic-example-header linguistic-example-content"><strong>SAT numerals don’t combine with collective predicates</strong></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">tleetiin</td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">walad</td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">tjammaʕ-<span class="math inline">\(\varnothing\)</span>.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;">thirty</td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">child.SG</td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">gathered-3rd<strong>.SG</strong></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" colspan="3" class="linguistic-example-translation linguistic-example-content">* Thirty children gathered<strong>-SG</strong>.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This points to an analysis in terms of quantification over singularities.</p>
+<div id="ex62">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(62)</td>
+<td style="text-align: left;" class="linguistic-example-content"><span class="math inline">\([\![\text{thirty}_{SAT}\text{ child}]\!] = \lambda q. \#\{x | q(x)\land\textsf{child}(x)\} = 30\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Just like <em>every</em> and non-partitive <em>most</em>, SAT numerals yield cumulative readings.</p>
+<div id="ex63">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(63)</td>
+<td style="text-align: left;" colspan="7" class="linguistic-example-header linguistic-example-content"><strong>Context:</strong> each journalist interviewed 10 children, asking them questions about their father.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">l-s<sup>ʕ</sup>aħafiyiin</td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">le-tleeta</td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">saʔalu</td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">tleetin</td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">walad</td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">ʕan</td>
+<td style="text-align: left;" class="linguistic-example-source linguistic-example-content">bayy<strong>-u</strong></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;">the-journalists</td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">the-three</td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">asked.PL</td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">30</td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">children</td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">about</td>
+<td style="text-align: left;" class="linguistic-example-gloss linguistic-example-content">father<strong>-his</strong></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" colspan="7" class="linguistic-example-translation linguistic-example-content">The three journalists asked 30 boy about “<em>his</em>” father.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ex64">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(64)</td>
+<td style="text-align: left;" class="linguistic-example-content"><strong>Cumulative truth-conditions:</strong><br />
+<em>Every journalist asked a child about his father.</em><br />
+<em>Thirty children was asked by a journalist about his father.</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The presence of this cumulative reading is unexpected if <em>ask</em> has a cumulative denotation.</p>
+<div id="ex65">
+<table class="linguistic-example">
+<caption></caption>
+<tbody>
+<tr class="odd">
+<td class="linguistic-example-number" style="vertical-align: top;">(65)</td>
+<td style="text-align: left;" class="linguistic-example-label">a.</td>
+<td style="text-align: left;" class="linguistic-example-content">The 3 journalists asked 30 boy.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">b.</td>
+<td style="text-align: left;" class="linguistic-example-content">The number of boys such that the three journalists asked them about their father is 30. <span class="math inline">\(\#\{x | \textsf{ask}(x)(\iota\textsf{journalists})\land\textsf{child}(x)\} = 30\)</span></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;" class="linguistic-example-label">c.</td>
+<td style="text-align: left;" class="linguistic-example-content">The number of boys such that every journalist asked them about their father is 30. <span class="math inline">\(\#\{x | \forall y\prec \iota\textsf{journalists}, \textsf{ask}(x)(y)\land\textsf{child}(x)\} = 30\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="bibliography">Bibliography</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-Bar-Lev2018" class="csl-entry" role="doc-biblioentry">
+Bar-Lev, Moshe. 2018. <span>“Free <span>Choice</span>, <span>Homogeneity</span>, and <span>Innocent Inclusion</span>.”</span> PhD thesis.
+</div>
+<div id="ref-Bar-LevFox2016" class="csl-entry" role="doc-biblioentry">
+Bar-Lev, Moshe E., and Danny Fox. 2016. <span>“On the Global Calculation of Embedded Implicatures.”</span> In <em>Poster Presented at <span>MIT</span> Workshop on Exhaustivity</em>.
+</div>
+<div id="ref-Bayer2013" class="csl-entry" role="doc-biblioentry">
+Bayer, Samuel L. 2013. <em>Confessions of a Lapsed <span>Neo</span>-<span>Davidsonian</span>: <span>Events</span> and Arguments in Compositional Semantics</em>. <span>Routledge</span>.
+</div>
+<div id="ref-Beck2000" class="csl-entry" role="doc-biblioentry">
+Beck, Sigrid. 2000. <span>“Star <span>Operators</span> 1: <span>Defense</span> of the <span>Double Star</span>.”</span> <em>University of Massachusetts Occasional Papers in Linguistics</em> 26 (3): 2.
+</div>
+<div id="ref-BeckSauerland2000" class="csl-entry" role="doc-biblioentry">
+Beck, Sigrid, and Uli Sauerland. 2000. <span>“Cumulation Is Needed: <span>A</span> Reply to <span>Winter</span> (2000).”</span> <em>Natural Language Semantics</em> 8 (4): 349–71.
+</div>
+<div id="ref-Champollion2010" class="csl-entry" role="doc-biblioentry">
+Champollion, Lucas. 2010. <span>“Cumulative Readings of Every Do Not Provide Evidence for Events and Thematic Roles.”</span> In <em>Logic, Language and Meaning</em>, 213–22. <span>Springer</span>.
+</div>
+<div id="ref-Champollion2016" class="csl-entry" role="doc-biblioentry">
+———. 2016. <span>“Overt Distributivity in Algebraic Event Semantics.”</span> <em>Semantics and Pragmatics</em> 9 (16): 1–65. <a href="https://doi.org/10.3765/sp.9.16">https://doi.org/10.3765/sp.9.16</a>.
+</div>
+<div id="ref-ChierchiaEtAl2012" class="csl-entry" role="doc-biblioentry">
+Chierchia, Gennaro, Danny Fox, and Benjamin Spector. 2012. <span>“The Grammatical View of Scalar Implicatures and the Relationship Between Semantics and Pragmatics.”</span> <em>Semantics: An International Handbook of Natural Language Meaning</em> 3: 2297–2332.
+</div>
+<div id="ref-Crnic2010" class="csl-entry" role="doc-biblioentry">
+Crnič, Luka. 2010. <span>“On the (Non-) Cumulativity of Cumulative Quantifiers.”</span> In <em>Proceedings of <span>Sinn</span> Und <span>Bedeutung</span></em>, 14:117–33.
+</div>
+<div id="ref-Ferch2013" class="csl-entry" role="doc-biblioentry">
+Ferch, Elizabeth. 2013. <span>“Scopeless Quantity Words in <span>Shona</span>.”</span> <em>Natural Language Semantics</em> 21 (4): 373–400. <a href="https://doi.org/10.1007/s11050-013-9097-6">https://doi.org/10.1007/s11050-013-9097-6</a>.
+</div>
+<div id="ref-Ferreira2005" class="csl-entry" role="doc-biblioentry">
+Ferreira, Marcelo Marcelo Barra. 2005. <span>“Event Quantification and Plurality.”</span>
+</div>
+<div id="ref-Fox2007" class="csl-entry" role="doc-biblioentry">
+Fox, Danny. 2007. <span>“Free Choice and the Theory of Scalar Implicatures.”</span> In <em>Presupposition and Implicature in Compositional Semantics</em>, 71–120. <span>Springer</span>.
+</div>
+<div id="ref-Gil1982" class="csl-entry" role="doc-biblioentry">
+Gil, David. 1982. <span>“Quantifier Scope, Linguistic Variation, and Natural Language Semantics.”</span> <em>Linguistics and Philosophy</em> 5 (4): 421–72.
+</div>
+<div id="ref-HaslingerSchmitt2018" class="csl-entry" role="doc-biblioentry">
+Haslinger, Nina, and Viola Schmitt. 2018. <span>“Scope-Related Cumulativity Asymmetries and Cumulative Composition.”</span> In <em><span>SALT</span> 28</em>.
+</div>
+<div id="ref-HaslingerSchmitt2020" class="csl-entry" role="doc-biblioentry">
+———. 2020. <span>“Cumulative Readings of Modified Numerals: <span>A</span> Plural Projection Approach.”</span> <em>Proceedings of Sinn Und Bedeutung</em> 24 (1): 323–40. <a href="https://doi.org/10.18148/sub/2020.v24i1.870">https://doi.org/10.18148/sub/2020.v24i1.870</a>.
+</div>
+<div id="ref-HeimKratzer1998" class="csl-entry" role="doc-biblioentry">
+Heim, Irene, and Angelika Kratzer. 1998. <em>Semantics in Generative Grammar</em>. Vol. 13. <span>Blackwell Oxford</span>.
+</div>
+<div id="ref-KampReyle2013" class="csl-entry" role="doc-biblioentry">
+Kamp, Hans, and Uwe Reyle. 2013. <em>From Discourse to Logic: <span>Introduction</span> to Model-Theoretic Semantics of Natural Language, Formal Logic and Discourse Representation Theory</em>. Vol. 42. <span>Springer Science &amp; Business Media</span>.
+</div>
+<div id="ref-Kratzer2003" class="csl-entry" role="doc-biblioentry">
+Kratzer, Angelika. 2003. <em>The <span>Event Argument</span> and <span>The Semantics Of Verbs</span></em>. (Ms).
+</div>
+<div id="ref-Landman1989" class="csl-entry" role="doc-biblioentry">
+Landman, Fred. 1989. <span>“Groups, i.”</span> <em>Linguistics and Philosophy</em> 12 (5): 559–605.
+</div>
+<div id="ref-Landman2000" class="csl-entry" role="doc-biblioentry">
+———. 2000. <em>Events and Plurality: <span>The Jerusalem</span> Lectures</em>. Vol. 76. <span>Dordrecht, Netherlands</span>: <span>Kluwer</span>.
+</div>
+<div id="ref-Link1983" class="csl-entry" role="doc-biblioentry">
+Link, Godehard. 1983. <span>“The Logical Analysis of Plurals and Mass Terms: <span>A</span> Lattice-Theoretical Approach.”</span> In <em>Meaning, Use and Interpretation of Language</em>, edited by Rainer Bäuerle, Christoph Schwarze, and Arnim von Stechow, 302–23. <span>de Gruyter Berlin</span>.
+</div>
+<div id="ref-Magri2011" class="csl-entry" role="doc-biblioentry">
+Magri, Giorgio. 2011. <span>“Another Argument for Embedded Scalar Implicatures Based on Oddness in Downward Entailing Environments.”</span> <em>Semantics and Pragmatics</em> 4: 6–1.
+</div>
+<div id="ref-Malamud2012" class="csl-entry" role="doc-biblioentry">
+Malamud, Sophia. 2012. <span>“The Meaning of Plural Definites: <span>A</span> Decision-Theoretic Approach.”</span> <em>Semantics and Pragmatics</em> 5: 1–3.
+</div>
+<div id="ref-MullerNegrao2012" class="csl-entry" role="doc-biblioentry">
+Müller, Ana, and Esmeralda Negrão. 2012. <span>“On Distributivity in <span>Karitiana</span>.”</span> In <em>Verbal Plurality and Distributivity</em>, 159–84. <span>De Gruyter</span>.
+</div>
+<div id="ref-Ouwayda2017" class="csl-entry" role="doc-biblioentry">
+Ouwayda, Sarah. 2017. <span>“On the <span>DP</span> Dependence of Collective Interpretation with Numerals.”</span> <em>Natural Language Semantics</em> 25 (4): 263–314.
+</div>
+<div id="ref-Sauerland1998" class="csl-entry" role="doc-biblioentry">
+Sauerland, Uli. 1998. <span>“Plurals, Derived Predicates and Reciprocals.”</span> <em>The Interpretive Tract, MITWPL</em> 25: 177–204.
+</div>
+<div id="ref-Schein1993" class="csl-entry" role="doc-biblioentry">
+Schein, Barry. 1993. <em>Plurals and Events</em>. Vol. 23. <span>Cambridge, MA</span>: <span>MIT Press</span>.
+</div>
+<div id="ref-Schmitt2013" class="csl-entry" role="doc-biblioentry">
+Schmitt, Viola. 2013. <span>“More Pluralities.”</span> PhD thesis, University of Vienna.
+</div>
+<div id="ref-Schmitt2017" class="csl-entry" role="doc-biblioentry">
+———. 2017. <span>“Cross-Categorial Plurality and Plural Composition.”</span> <span>University of Vienna</span>.
+</div>
+<div id="ref-Schmitt2019" class="csl-entry" role="doc-biblioentry">
+———. 2019. <span>“Pluralities Across Categories and Plural Projection.”</span> <em>Semantics and Pragmatics</em> 12: 17.
+</div>
+<div id="ref-ThomasSudo2016" class="csl-entry" role="doc-biblioentry">
+Thomas, Guillaume, and Yasutada Sudo. 2016. <span>“Cumulative Readings of Each.”</span> In <em>Presentation at the <span>Workshop</span> on (<span>Co</span>-) <span>Distributivity</span>, <span>Paris</span>, <span>February</span></em>.
+</div>
+<div id="ref-TieuEtAl2015" class="csl-entry" role="doc-biblioentry">
+Tieu, Lyn, Jacopo Romoli, Peng Zhou, and Stephen Crain. 2015. <span>“Children’s Knowledge of Free Choice Inferences and Scalar Implicatures.”</span> <em>Journal of Semantics</em> 33 (2): 269–98.
+</div>
+</div>
+<h2 id="footnotes">Footnotes</h2>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>These truth-conditions are inappriopriate when collective action is considered.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>Some speakers of Lebanese Arabic do not have SAT numerals. Thus, it would be more accurate to say that this is a feature of some sub-dialect of Lebanese Arabic.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</body>
+</html>
