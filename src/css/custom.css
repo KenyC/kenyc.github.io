@@ -24,7 +24,9 @@ a.nolink {
 a {
 	box-shadow: 0 1px 0 0 currentColor;
 	text-decoration: none;
-	color: #007acc;
+/*	color: #007acc;
+	color: #4bccdd;
+*/	color: #3fabba;
 }
 
 a:hover, a:focus, a:active {
@@ -60,7 +62,6 @@ nav {
 #content {
 	text-align: justify;
 	width: 100%;
-	margin-top: 25px;
 }
 #icons {
 	margin: 0px;
@@ -75,21 +76,11 @@ nav {
 
 #icons a {
 	background-color: #2A2D34;
-	color: #1B9AAA;
+	color: #4bccdd;
 	background-clip: padding-box;
 	font-size: 120%;
-	padding-top: 20px;
-	padding-bottom: 5px;
-}
-
-#icons a:first-child {
-	border-top-left-radius:    15px;
-	border-bottom-left-radius: 15px;
-}
-
-#icons a:last-child {
-	border-top-right-radius:    15px;
-	border-bottom-right-radius: 15px;
+	padding-top:    10px;
+	padding-bottom: 10px;
 }
 
 #icons a.current {
@@ -102,13 +93,15 @@ nav a {
 	margin: 0px;
 	display: block;
 	text-decoration: none;
-/*	padding-left: 15px; 
-	padding-right: 15px; 
-*/	padding-top: 10px;
-	/* height: 100%; */
+}
+
+nav p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+
 }
 section {
-	margin-top: 60px;
+	margin-top: 40px;
 	/*margin-left: 125px;*/
 	height: 100%;
 	width: 100%;
@@ -144,7 +137,7 @@ header {
 	justify-content: flex-end;
 	width: 100%;
 	padding: 0px;
-	/*color: #1B9AAA;*/
+	/*color: #4bccdd;*/
 	/*margin-left: 20px;*/
 	font-size: 150%;
 }
@@ -154,26 +147,29 @@ header {
 	height: 0px;
 	margin-top: 10px;
 	margin-right: 10px;
-	border-top: solid #1B9AAA 3px;
+	border-top: solid #4bccdd 3px;
 	align-self: center;
 }
 
+
+
 #text h1 {
 	font-size: 150%;
-	/*color: #1B9AAA;*/
+	margin-bottom: 17px;
+	/*color: #4bccdd;*/
 }
 #text h2 {
-	/*color: #1B9AAA;*/
+	/*color: #4bccdd;*/
 	font-style: oblique;
 }
 
 
 
 section h2 span {
-	border-bottom: solid #1B9AAA 3px;
+	border-bottom: solid #4bccdd 3px;
 
 	/*text-decoration: underline;
-	text-decoration-color: #1B9AAA;
+	text-decoration-color: #4bccdd;
 	text-decoration-thickness: 3px;*/
 
 }
