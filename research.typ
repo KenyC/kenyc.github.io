@@ -86,30 +86,30 @@
 
 		== Conference presentations
 
-		- 2024\. Readings of pronouns across connectives are sensitive to monotonicity. _Sinn und Bedeutung_ 29.\
+		- 2024\. Readings of pronouns across connectives are sensitive to monotonicity. _Sinn und Bedeutung~29_.\
 		  (Presented at C.U.M.O.
 		  with B. Spector)\
-		  #paperlink(<paper-monotonicity>)
-		- 2020\. Cumulative readings of _every_: Weak and asymmetric. _SALT_ 30.\
+		  #bracketlink([slides], <paper-monotonicity>)
+		- 2020\. Cumulative readings of _every_: Weak and asymmetric. _SALT~30_.\
 		  (Presented remotely at Cornell University.)\
-		  #paperlink(<paper-cumulative-slides>)
-		- 2019\. Reciprocating _same_. _Sinn und Bedeutung_ 24.\
+		  #bracketlink([slides], <paper-cumulative-slides>)
+		- 2019\. Reciprocating _same_. _Sinn und Bedeutung~24_.\
 		  (Presented at Osnabrück University.)\
-		  #paperlink(<paper-reciprocating-slides>)
+		  #bracketlink([slides], <paper-reciprocating-slides>)
 		- 2019\. Reducing order-insensitivity in anaphora to accommodation. _Workshop on Asymmetries in Language: Presuppositions and Beyond_.\
 		  (Presented at ZAS Berlin.)\
-		  #paperlink(<paper-order-insensitivity>)
-		- 2019\. Wide-scope distributivity. _NELS_ 49.\
+		  #bracketlink([slides], <paper-order-insensitivity>)
+		- 2019\. Wide-scope distributivity. _NELS~49_.\
 		  (Presented at NELS 49.)\
-		  #paperlink(<paper-nels-slides>)
-		- 2018\. Gaps in the interpretation of pronouns. _SALT_ 28.\
+		  #bracketlink([slides], <paper-nels-slides>)
+		- 2018\. Gaps in the interpretation of pronouns. _SALT~28_.\
 		  (Presented at SALT 28.)\
-		  #paperlink(<paper-salt-poster>)
+		  #bracketlink([slides], <paper-salt-poster>)
 
 		== Dissertation
 
 		- Cumulativity from Homogeneity.\
-		  (Committee: M. Hackl, R. Schwarzschild, D. Fox, and G. Chierchia)\ #paperlink(<paper-dissertation>)
+		  (Committee: M. Hackl, R. Schwarzschild, D. Fox, and G. Chierchia)\ #bracketlink([download], <paper-dissertation>)
 
 		== Miscellanea
 
@@ -158,33 +158,30 @@
 		  #paperlink(<paper-max-informativity>)
 		- 2019\. What is wrong with doubles?\
 		  (Presented at MIT's LF reading group.)\
-		  #paperlink(<paper-doubles>)
+		  #handout(<paper-doubles>)
 		- 2018\. Local contexts and anaphora.\
 		  (Presented at the LINGUAE seminar at ENS.)\
-		  #paperlink(<paper-local-contexts-ens>)
+		  #slides(<paper-local-contexts-ens>)
 		- 2017\. Accounting for the existential/universal construals.\
 		  (Presented in class.)\
-		  #paperlink(<paper-weak-strong>)
+		  #handout(<paper-weak-strong>)
 		- 2017\. Local contexts and anaphora.\
 		  (Presented at MIT's LF reading group.)\
-		  #paperlink(<paper-local-contexts>)
+		  #handout(<paper-local-contexts>)
 		- 2017\. Relative clauses: Interactions with modals and definite article choice in Fering and Akan.\
 		  (LF reading group presentation.)\
-		  #paperlink(<paper-relative-clauses>)
-		- 2015\. A mixed approach to the semantics of “different”.\
-	  (Semantics first-year squib.)\
-	  #collapsible(text: "abstract")[
-		In this squib, I argue that Charnavel's uniform approach to the meanings of “different” can be turned into a movement analysis in which “different” is a scopal element. This is important for accounting for readings of “different” under modal predicates and suggests a distinction between scopal and inert internal adjectives.
-	  ]
-		- 2015\. Compositionality can solve Carnap's problem for natural languages.\
-	  (CogMaster's mini-stage.)\
-	  #collapsible(text: "abstract")[
-		Carnap's problem is that the reference of logical terms cannot be recovered solely from the patterns of inference they generate. This paper argues that compositionality, together with related assumptions, removes the problem for a trivalent first-order logic suited to presuppositions.
-	  ]
-		- 2018\. Local contexts and anaphora.\
-		  (Presented at the LINGUAE seminar at ENS.)\
-		  #paperlink(<paper-local-contexts-ens>)
+		  #handout(<paper-relative-clauses>)
+	// 	- 2015\. A mixed approach to the semantics of “different”.\
+	  // (Semantics first-year squib.)\
+	  // #collapsible(text: "abstract")[
+	// 	In this squib, I argue that Charnavel's uniform approach to the meanings of “different” can be turned into a movement analysis in which “different” is a scopal element. This is important for accounting for readings of “different” under modal predicates and suggests a distinction between scopal and inert internal adjectives.
+	  // ]
+	// 	- 2015\. Compositionality can solve Carnap's problem for natural languages.\
+	  // (CogMaster's mini-stage.)\
+	  // #collapsible(text: "abstract")[
+	// 	Carnap's problem is that the reference of logical terms cannot be recovered solely from the patterns of inference they generate. This paper argues that compositionality, together with related assumptions, removes the problem for a trivalent first-order logic suited to presuppositions.
+	  // ]
 		- 2017\. The referentiality of generic indefinites: Evidence from anaphora.\
 		  (Presented at SNEWS.)\
-		  #paperlink(<paper-generic-indefinites>)
+		  #handout(<paper-generic-indefinites>)
 

@@ -1,5 +1,7 @@
 #let bracketlink(text, href) = [\[#link(href, text)\]]
 #let paperlink = bracketlink.with("paper")
+#let handout = bracketlink.with("handout")
+#let slides = bracketlink.with("slides")
 #let doi = bracketlink.with("doi")
 
 
@@ -11,7 +13,9 @@
 	#html.div(class: "abstract-content")[#content]
 ]
 
-#let maillink(email) = link("mailto:" + email, email)
+#let maillink(email) = {
+	link("mailto:" + email, email)
+}
 
 
 #let htmlpage(name, content) = document(name, title: "Keny Chatain", {
