@@ -46,6 +46,7 @@ jobs:
       - name: Compile Typst
         run: |
           cargo build --release --locked --manifest-path .typst/Cargo.toml --package typst-cli
+          export PATH="$GITHUB_WORKSPACE/.typst/target/release:$PATH"
           echo "$GITHUB_WORKSPACE/.typst/target/release" >> "$GITHUB_PATH"
           typst --version
 
