@@ -3,7 +3,7 @@
 #let doi = bracketlink.with("doi")
 
 
-#let collapsibleabstract(content, text: "abstract") = html.div(class: "collapsible-abstract")[
+#let collapsible(content, text: "abstract") = html.div(class: "collapsible-abstract")[
 	#html.button(class: "abstract-toggle", type: "button", aria-expanded: false)[
 		#html.span(class: "abstract-triangle")[▶]
 		#html.span(class: "abstract-label")[#text]
@@ -11,8 +11,8 @@
 	#html.div(class: "abstract-content")[#content]
 ]
 
-#let collapsible = collapsibleabstract
 #let maillink(email) = link("mailto:" + email, email)
+
 
 #let htmlpage(name, content) = document(name, title: "Keny Chatain", {
 	html.html[
@@ -32,7 +32,8 @@
 				#html.nav[
 					#html.button(link(<about>, [About]))
 					#html.button(link(<research>, [Research]))
-					#html.button(link(<other>, [Other]))
+					#html.button(link(<cv>, [CV]))
+					#html.button(link(<other>, [Misc]))
 				]
 			]
 			#html.main(content)

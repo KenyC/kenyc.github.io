@@ -1,37 +1,10 @@
-# name: Continuous Deployment to GitHub Pages
-# on:
-#   push:
-#     branches:
-#       - main
-# jobs:
-#   build-and-deploy:
-#     name: Build
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Checkout repo
-#         uses: actions/checkout@v2
-#       - name: Install ghc
-#         uses: haskell-actions/setup@v2
-#         with:
-#           ghc-version: '8.10.7' # Exact version of ghc to use
-#           cabal-version: '3.6.2.0'
-#       - name: Install shake & HStringTemplate
-#         run: |
-#           cabal install shake --lib
-#           cabal install HStringTemplate --lib
-#       - name: Publish site
-#         uses: KenyC/ghpages@v0.2.1
-#         env:
-#           GH_PAT: ${{ secrets.GH_PAT }}
-#           BUILD_DIR: ./docs/
 
-# Sample workflow for building and deploying a Hugo site to GitHub Pages
 name: Deploy site to Pages
 
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: [$default-branch]
+    branches: [main]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -57,34 +30,32 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
-    # env:
-    #   HUGO_VERSION: 0.124.1
+
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
-      - name: Install yui-compressor
-        run: sudo apt install yui-compressor
-      - name: Install ghc
-        uses: haskell-actions/setup@v2
-        with:
-          ghc-version: '8.10.7' # Exact version of ghc to use
-          cabal-version: '3.6.2.0'
-      - name: Install shake & HStringTemplate
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Download pinned Typst source
         run: |
-          cabal install shake --lib
-          cabal install HStringTemplate --lib
-      - name: Build the build system
+          git clone --depth 1 --branch v0.15.1 https://github.com/typst/typst.git .typst
+          test "$(git -C .typst rev-parse --short=8 HEAD)" = "9dfd3a08"
+
+      - name: Compile Typst
         run: |
-          mkdir .shake
-          cd shake
-          ghc -package shake -Wall --make Shakefile.hs -rtsopts -with-rtsopts=-I0 -outputdir=../.shake -o ../.shake/build
-          cd ..
+          cargo build --release --locked --manifest-path .typst/Cargo.toml --package typst-cli
+          echo "$GITHUB_WORKSPACE/.typst/target/release" >> "$GITHUB_PATH"
+          typst --version
+
       - name: Build website
-        run: .shake/build -B
+        run: bash build.sh
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./docs
+          path: ./site
 
   # Deployment job
   deploy:
