@@ -1,11 +1,12 @@
 _cache/
 .shake/
+site/
 build/
 _site/
 src/sandbox/
 update-site
 
-stack.yaml.lock 
+stack.yaml.lock
 dist
 dist-*
 cabal-dev

@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	align-items: flex-start;
+	gap: 1rem;
+}
+
+header {
+	flex: 0 0 25%;
+}
+
+.avatar {
+	float: right;
+	/*border: solid 1px lightgray;*/
+	margin-left: 1em;
+	margin-bottom: 0.5em;
+	width: 25%;
+/*	display: block;
+	margin: auto;
+	margin-top: 30px;
+*/
+}
+
+main {
+	text-align: justify;
+	flex: 1 1 auto;
+	min-width: 0;
+	max-width: 85ch;
+}
+
+@media (max-width: 768px) {
+	body {
+		flex-direction: column;
+		padding: 10px;
+	}
+
+	header,
+	main {
+		flex: none;
+		width: 100%;
+		max-width: none;
+	}
+
+	.avatar {
+		width: 40%;
+
+	}
+}
+
+h1 {
+	text-align: center;
+}
+
+
+header a {
+	color: inherit;
+}
+
+button {
+	background: #e9e9e9;
+}
+
+.abstract-toggle {
+	border: 0;
+	padding: 0;
+	background: transparent;
+	cursor: pointer;
+	margin-bottom: 0em;
+}
+
+.abstract-triangle {
+	display: inline-block;
+	width: 1em;
+	font-size: 0.6em;
+}
+
+.abstract-content[hidden] {
+	display: none;
+}
+
+.abstract-content {
+	margin-top: 0.5rem;
+}

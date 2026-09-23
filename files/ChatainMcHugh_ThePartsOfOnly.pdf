@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>View of The parts of only: effects of mereology in the semantics of only</title>
+
+	
+<link rel="icon" href="https://journals.linguisticsociety.org/proceedings/public/journals/5/favicon_en.png">
+<meta name="generator" content="Open Journal Systems 3.4.0.5">
+<link rel="alternate" type="application/atom+xml" href="https://journals.linguisticsociety.org/proceedings/index.php/SALT/gateway/plugin/APP%5Cplugins%5Cgeneric%5CwebFeed%5CWebFeedGatewayPlugin/atom">
+<link rel="alternate" type="application/rdf+xml" href="https://journals.linguisticsociety.org/proceedings/index.php/SALT/gateway/plugin/APP%5Cplugins%5Cgeneric%5CwebFeed%5CWebFeedGatewayPlugin/rss">
+<link rel="alternate" type="application/rss+xml" href="https://journals.linguisticsociety.org/proceedings/index.php/SALT/gateway/plugin/APP%5Cplugins%5Cgeneric%5CwebFeed%5CWebFeedGatewayPlugin/rss2">
+	<link rel="stylesheet" href="https://journals.linguisticsociety.org/proceedings/index.php/SALT/$$$call$$$/page/page/css?name=stylesheet" type="text/css" /><link rel="stylesheet" href="https://journals.linguisticsociety.org/proceedings/index.php/SALT/$$$call$$$/page/page/css?name=font" type="text/css" /><link rel="stylesheet" href="https://journals.linguisticsociety.org/proceedings/lib/pkp/styles/fontawesome/fontawesome.css?v=3.4.0.5" type="text/css" /><link rel="stylesheet" href="https://journals.linguisticsociety.org/proceedings/public/journals/5/styleSheet.css?d=2023-09-11+20%3A46%3A55" type="text/css" />
+	<script src="https://journals.linguisticsociety.org/proceedings/lib/pkp/lib/vendor/components/jquery/jquery.min.js?v=3.4.0.5" type="text/javascript"></script><script src="https://journals.linguisticsociety.org/proceedings/lib/pkp/lib/vendor/components/jqueryui/jquery-ui.min.js?v=3.4.0.5" type="text/javascript"></script><script src="https://journals.linguisticsociety.org/proceedings/plugins/themes/default/js/lib/popper/popper.js?v=3.4.0.5" type="text/javascript"></script><script src="https://journals.linguisticsociety.org/proceedings/plugins/themes/default/js/lib/bootstrap/util.js?v=3.4.0.5" type="text/javascript"></script><script src="https://journals.linguisticsociety.org/proceedings/plugins/themes/default/js/lib/bootstrap/dropdown.js?v=3.4.0.5" type="text/javascript"></script><script src="https://journals.linguisticsociety.org/proceedings/plugins/themes/default/js/main.js?v=3.4.0.5" type="text/javascript"></script>
+</head>
+<body class="pkp_page_article pkp_op_view">
+
+		<header class="header_view">
+
+		<a href="https://journals.linguisticsociety.org/proceedings/index.php/SALT/article/view/35.030" class="return">
+			<span class="pkp_screen_reader">
+									Return to Article Details
+							</span>
+		</a>
+
+		<a href="https://journals.linguisticsociety.org/proceedings/index.php/SALT/article/view/35.030" class="title">
+			The parts of only: effects of mereology in the semantics of only
+		</a>
+
+		<a href="https://journals.linguisticsociety.org/proceedings/index.php/SALT/article/download/35.030/Chatain-SALT35/14184" class="download" download>
+			<span class="label">
+				Download
+			</span>
+			<span class="pkp_screen_reader">
+				Download PDF
+			</span>
+		</a>
+
+	</header>
+
+	<script type="text/javascript">
+		// Creating iframe's src in JS instead of Smarty so that EZProxy-using sites can find our domain in $pdfUrl and do their rewrites on it.
+		$(document).ready(function() {
+			var urlBase = "https://journals.linguisticsociety.org/proceedings/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=";
+			var pdfUrl = "https://journals.linguisticsociety.org/proceedings/index.php/SALT/article/download/35.030/Chatain-SALT35/14184";
+
+			// Convert same-origin absolute PDF URLs to relative URLs.
+			// This avoids server security rules treating file=https://... as RFI.
+			try {
+			        var parsedPdfUrl = new URL(pdfUrl, window.location.origin);
+			        if (parsedPdfUrl.origin === window.location.origin) {
+			                pdfUrl = parsedPdfUrl.pathname + parsedPdfUrl.search + parsedPdfUrl.hash;
+			        }
+			} catch (e) {
+			        // Keep the original URL if parsing fails.
+			}
+
+			$("#pdfCanvasContainer > iframe").attr("src", urlBase + encodeURIComponent(pdfUrl));
+		});
+	</script>
+
+	<div id="pdfCanvasContainer" class="galley_view">
+				<iframe src="" width="100%" height="100%" style="min-height: 500px;" title="PDF of The parts of only: effects of mereology in the semantics of only" allowfullscreen webkitallowfullscreen></iframe>
+	</div>
+	
+</body>
+</html>

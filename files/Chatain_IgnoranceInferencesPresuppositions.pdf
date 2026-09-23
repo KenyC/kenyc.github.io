@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>
+			View of Ignorance inferences in the presence of presuppositions
+		</title>
+
+	
+<meta name="csrf-token" content="hbNppIwIFi4U45CYZUuaxUlbS03Ve6fgiIyQskaW" />
+<meta name="generator" content="Open Journal Systems 3.5.0.5" />
+	<link rel="stylesheet" href="https://ojs.ub.uni-konstanz.de/sub/index.php/sub/$$$call$$$/page/page/css?name=stylesheet" type="text/css" /><link rel="stylesheet" href="https://ojs.ub.uni-konstanz.de/sub/index.php/sub/$$$call$$$/page/page/css?name=font" type="text/css" /><link rel="stylesheet" href="https://ojs.ub.uni-konstanz.de/sub/lib/pkp/styles/fontawesome/fontawesome.css?v=3.5.0.5" type="text/css" /><link rel="stylesheet" href="https://ojs.ub.uni-konstanz.de/sub/plugins/themes/default/js/lib/swiper/swiper-bundle.css?v=3.5.0.5" type="text/css" />
+	<script src="https://ojs.ub.uni-konstanz.de/sub/js/build/jquery/jquery.js?v=3.5.0.5" type="text/javascript"></script><script src="https://ojs.ub.uni-konstanz.de/sub/js/build/jquery-ui/jquery-ui.js?v=3.5.0.5" type="text/javascript"></script><script src="https://ojs.ub.uni-konstanz.de/sub/plugins/themes/default/js/lib/popper/popper.js?v=3.5.0.5" type="text/javascript"></script><script src="https://ojs.ub.uni-konstanz.de/sub/plugins/themes/default/js/lib/bootstrap/util.js?v=3.5.0.5" type="text/javascript"></script><script src="https://ojs.ub.uni-konstanz.de/sub/plugins/themes/default/js/lib/bootstrap/dropdown.js?v=3.5.0.5" type="text/javascript"></script><script src="https://ojs.ub.uni-konstanz.de/sub/plugins/themes/default/js/lib/swiper/swiper-bundle.js?v=3.5.0.5" type="text/javascript"></script><script type="text/javascript">var pkpDefaultThemeI18N = {"nextSlide":"Next slide","prevSlide":"Previous slide"}</script><script src="https://ojs.ub.uni-konstanz.de/sub/plugins/themes/default/js/main.js?v=3.5.0.5" type="text/javascript"></script>
+</head>
+<body class="pkp_page_article pkp_op_view">
+
+		<header class="header_view">
+
+		<a href="https://ojs.ub.uni-konstanz.de/sub/index.php/sub/article/view/1325" class="return">
+			<span class="pkp_screen_reader">
+									Return to Issue Details
+							</span>
+		</a>
+
+		<a href="https://ojs.ub.uni-konstanz.de/sub/index.php/sub/article/view/1325" class="title">
+							Ignorance inferences in the presence of presuppositions
+					</a>
+
+		<a href="https://ojs.ub.uni-konstanz.de/sub/index.php/sub/article/download/1325/1274/2160" class="download" download="download">
+			<span class="label">
+				Download
+			</span>
+			<span class="pkp_screen_reader">
+				Download PDF
+			</span>
+		</a>
+
+	</header>
+
+	<script type="text/javascript">
+		// Creating iframe's src in JS instead of Smarty so that EZProxy-using sites can find our domain in $pdfUrl and do their rewrites on it.
+		$(document).ready(function() {
+			var urlBase = "https://ojs.ub.uni-konstanz.de/sub/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=";
+			var pdfUrl = "https://ojs.ub.uni-konstanz.de/sub/index.php/sub/article/download/1325/1274/2160";
+			$("#pdfCanvasContainer > iframe").attr("src", urlBase + encodeURIComponent(pdfUrl));
+		});
+	</script>
+
+	<div id="pdfCanvasContainer" class="galley_view">
+				<iframe src="" width="100%" height="100%" style="min-height: 500px;" title="PDF of Ignorance inferences in the presence of presuppositions" allow="fullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
+	</div>
+	
+</body>
+</html>
