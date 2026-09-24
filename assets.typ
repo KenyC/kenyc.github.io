@@ -1,6 +1,7 @@
 #asset("files/CV_KenyChatain.pdf", read("files/CV_KenyChatain.pdf", encoding: none)) <cv>
 // use encoding: none for bytes object
 #asset("custom.css", read("custom.css"))
+#asset("tacit.css", read("tacit-css-1.5.0.min.css")) 
 #asset("collapsible.js", read("collapsible.js"))
 #asset("img/avatar.png", read("img/avatar.png", encoding: none))
 #asset("img/tree.webp", read("img/tree.webp", encoding: none))
@@ -17,6 +18,7 @@
 #asset("shajara/main.css", read("files/shajara/main.css"))
 #asset("shajara/main.js", read("files/shajara/main.js"))
 #asset("shajara/main.wasm", read("files/shajara/main.wasm", encoding: none))
+#asset("shajara/desktop.zip", read("files/shajara.zip", encoding: none)) <shajara-desktop>
 
 #asset("files/Chatain_ReducingPronounAccessibilityToPresuppositionSatisfaction.pdf", read("files/Chatain_ReducingPronounAccessibilityToPresuppositionSatisfaction.pdf", encoding: none)) <paper-pronouns>
 #asset("files/ChatainSchlenker_NonRedundancy.pdf", read("files/ChatainSchlenker_NonRedundancy.pdf", encoding: none)) <paper-nonredundancy>

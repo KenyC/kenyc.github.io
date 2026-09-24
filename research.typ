@@ -54,38 +54,36 @@
 		  (fourth author, with J. Chatain, C. H. Müller, and L. Calabrese)
 		- 2020\. Cumulative readings of “every” and leaks. In _Proceedings of SALT_\
 		  #doi("https://doi.org/10.3765/salt.v30i0.4821") #paperlink(<paper-cumulative>)
-		- 2020\. Reciprocating same. In _Proceedings of Sinn und Bedeutung_\
-		  #paperlink(<paper-wide-scope>)
-		- 2019\. Wide-scope distributivity. In _Proceedings of NELS_\
-		  #paperlink(<paper-wide-scope>)
-		- 2018\. Gaps in the interpretation of pronouns. In _Proceedings of SALT_\
-		  #paperlink(<paper-gaps>)
 
-
-		== Manuscripts
-
-		- 2025\. Exhaustive readings of indefinites require rich content. _Natural Language and Linguistic Theory_\
-		  (under review.)\
-		  #paperlink(<paper-exhaustive>)
-		- 2024\. Existential and universal readings of pronouns across binary connectives: An experimental investigation. _Semantics and Pragmatics_\
-		  (with B. Spector and N. Gregorio)\
-		  (under review.)\
-		  #paperlink(<paper-pronouns-experiment>)
-
-		== Conference proceedings
-
-		- 2019\. Reciprocating _same_. In _Proceedings of Sinn und Bedeutung_ 24.\
+		- 2020\. Reciprocating _same_. In _Proceedings of Sinn und Bedeutung_ 24.\
 		  #paperlink(<paper-reciprocating-proceedings>)
 		- 2019\. Wide-scope distributivity. In _Proceedings of NELS_ 49.\
 		  #paperlink(<paper-wide-scope>)
 		- 2018\. Gaps in the interpretation of pronouns. In _Proceedings of SALT_ 28.\
 		  #paperlink(<paper-gaps>)
+		// - 2020\. Reciprocating same. In _Proceedings of Sinn und Bedeutung_\
+		//   #paperlink(<paper-reciprocating-proceedings>)
+		// - 2019\. Wide-scope distributivity. In _Proceedings of NELS_\
+		//   #paperlink(<paper-wide-scope>)
+		// - 2018\. Gaps in the interpretation of pronouns. In _Proceedings of SALT_\
+		//   #paperlink(<paper-gaps>)
+
+
+		== Manuscripts
+
+		- 2025\. Exhaustive readings of indefinites require rich content. _Natural Language and Linguistic Theory_\
+		  (under review)\
+		  #paperlink(<paper-exhaustive>)
+		- 2024\. Existential and universal readings of pronouns across binary connectives: An experimental investigation. _Semantics and Pragmatics_\
+		  (with B. Spector and N. Gregorio)\
+		  (under review)\
+		  #paperlink(<paper-pronouns-experiment>)
+
 
 		== Conference presentations
 
 		- 2024\. Readings of pronouns across connectives are sensitive to monotonicity. _Sinn und Bedeutung~29_.\
-		  (Presented at C.U.M.O.
-		  with B. Spector)\
+		  (Presented at C.U.M.O. with B. Spector)\
 		  #bracketlink([slides], <paper-monotonicity>)
 		- 2020\. Cumulative readings of _every_: Weak and asymmetric. _SALT~30_.\
 		  (Presented remotely at Cornell University.)\
@@ -132,7 +130,7 @@
 
 		== Software
 
-		I wrote this semi-graphical software for typesetting trees in LaTeX.
+		I wrote this graphical software for typesetting trees in LaTeX.
 
 		- Shajara (Web Edition, beta).\
 		  #bracketlink("try it", <shajara-web>) #bracketlink("code", "https://github.com/KenyC/WebShajara")\
@@ -140,7 +138,7 @@
 			Left-click to create nodes, Ctrl-Left-Click to add labels, and right-click to delete nodes. The tool exports to QTree format, which can be added directly to a TeX file.
 		  ]
 		- Shajara.\
-		  #bracketlink("download", "resources/files/TreeMaker.zip") #bracketlink("code", "https://github.com/KenyC/Shajara")\
+		  #bracketlink("download", <shajara-desktop>) #bracketlink("code", "https://github.com/KenyC/Shajara")\
 		  #collapsible(text: "instructions")[
 			Left-click to create nodes, Ctrl-Left-Click to add labels, and right-click to delete nodes. The tool exports to QTree format, which can be added directly to a TeX file.
 		  ]
@@ -181,4 +179,3 @@
 		- 2017\. The referentiality of generic indefinites: Evidence from anaphora.\
 		  (Presented at SNEWS.)\
 		  #handout(<paper-generic-indefinites>)
-

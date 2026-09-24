@@ -19,13 +19,14 @@
 
 
 #let htmlpage(name, content) = document(name, title: "Keny Chatain", {
-	html.html[
+	html.html(lang: "en")[
 		#html.head[
 			// meta
 			#html.meta(charset: "utf-8")
 			#html.meta(name: "viewport", content: "width=device-width, initial-scale=1.0")
+			#html.title[Keny Chatain]
 			// css
-			#html.link(rel: "stylesheet", href: "https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css-1.5.0.min.css", type: "text/css")
+			#html.link(rel: "stylesheet", href: "/tacit.css", type: "text/css")
 			#html.link(rel: "stylesheet", href: "custom.css", type: "text/css")
 			#html.script(src: "collapsible.js")
 			//
