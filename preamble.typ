@@ -34,10 +34,10 @@
 			#html.header[
 				#title[Keny Chatain]
 				#html.nav[
-					#html.button(link(<about>, [About]))
-					#html.button(link(<research>, [Research]))
-					#html.button(link(<cv>, [CV]))
-					#html.button(link(<other>, [Misc]))
+					#link(<about>, html.button([About]))
+					#link(<research>, html.button([Research]))
+					#link(<cv>, html.button([CV]))
+					#link(<other>, html.button([Misc]))
 				]
 			]
 			#html.main(content)

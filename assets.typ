@@ -49,3 +49,6 @@
 #asset("files/LocalContextsForAnaphora.pdf", read("files/LocalContextsForAnaphora.pdf", encoding: none)) <paper-local-contexts>
 #asset("files/RCAndArticleChoice_v1.pdf", read("files/RCAndArticleChoice_v1.pdf", encoding: none)) <paper-relative-clauses>
 #asset("files/GenericIndefinitesAsReferentialExpressions.pdf", read("files/GenericIndefinitesAsReferentialExpressions.pdf", encoding: none)) <paper-generic-indefinites>
+
+#asset("files/Chatain_AccessibilityConditionsOfPronounsInTheBoundsOfMeaning.pdf", read("files/Chatain_AccessibilityConditionsOfPronounsInTheBoundsOfMeaning.pdf", encoding: none)) <croatian-philosophy>
+#asset("files/Chatain_ExhaustiveInferencesInReplies.pdf", read("files/Chatain_ExhaustiveInferencesInReplies.pdf", encoding: none)) <foxfestschrift>

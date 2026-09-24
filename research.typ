@@ -20,11 +20,11 @@
 		  (fourth author, with P. Schlenker, C. Pawlowitsch, L. H. Arnal, L. Ravaux, R. Ryder, A. Salis, S. Steinert-Threlkeld, L. Wang, and E. Chemla)\
 		  #doi("https://doi.org/10.1007/s10988-025-09438-8")
 		- 2021\. Articulated homogeneity in cumulative sentences. _Journal of Semantics_\
-		  #paperlink(<paper-homogeneity>)
+		  #doi("https://doi.org/10.1093/jos/ffab019") #paperlink(<paper-homogeneity>)
 
 		=== To appear
 
-		- 2026\. Accessibility conditions of pronouns in “The Bounds of Meaning”. _Journal of Croatian Philosophy_.
+		- 2026\. Accessibility conditions of pronouns in “The Bounds of Meaning”. _Journal of Croatian Philosophy_.\ #paperlink(<croatian-philosophy>)
 		- 2026\. Local pragmatics redux. _Semantics of Natural Language_.\
 		  (with P. Schlenker)\
 		  #paperlink("https://ling.auf.net/lingbuzz/007095")
@@ -36,7 +36,7 @@
 
 		== Other published articles
 
-		- 2025\. Exhaustive inferences in replies. In _A Festschrift for Danny Fox_ (MIT Working Papers in Linguistics).
+		- 2025\. Exhaustive inferences in replies. In _A Festschrift for Danny Fox_ (MIT Working Papers in Linguistics).\ #paperlink(<foxfestschrift>)
 
 
 
@@ -67,9 +67,6 @@
 		- 2025\. Exhaustive readings of indefinites require rich content. _Natural Language and Linguistic Theory_\
 		  (under review.)\
 		  #paperlink(<paper-exhaustive>)
-		- 2024\. Gricean equilibria in a general signaling game. _Games, Decision and Language_\
-		  (under review; special issue of the _International Journal of Game Theory_.)\
-		  #paperlink(<paper-gricean>)
 		- 2024\. Existential and universal readings of pronouns across binary connectives: An experimental investigation. _Semantics and Pragmatics_\
 		  (with B. Spector and N. Gregorio)\
 		  (under review.)\

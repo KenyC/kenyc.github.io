@@ -3,7 +3,7 @@
 == About me
 
 #html.img(src: "img/avatar.png", class: "avatar")
-I am a _post-doctoral researcher at Heinrich-Heine Universität in Düsseldorf_, supported by a fellowship by the #link("https://www.humboldt-foundation.de/en/")[Alexander von Humboldt Foundation]. You can contact me at #maillink("keny.chatain@gmail.com").
+I am a _post-doctoral researcher at Heinrich-Heine Universität in Düsseldorf_, supported by a fellowship from the #link("https://www.humboldt-foundation.de/en/")[Alexander von Humboldt Foundation]. You can contact me at #maillink("keny.chatain@gmail.com").
 
 The questions that haunt me:
 
